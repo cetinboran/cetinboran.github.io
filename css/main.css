@@ -7,24 +7,3 @@
     --fontSize: 20px;
 }
 
-.main_container .top_wrapper{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    width: 100%;
-}
-
-.main_container .top_wrapper div{
-    padding: 10px;
-    width: 30%;
-}
-
-.main_container .top_wrapper .name{
-    text-align: center;
-    font-weight: 600;
-    font-size: var(--fontSize);
-}
-
-.main_container .top_wrapper .menu{
-    text-align: right;
-}
