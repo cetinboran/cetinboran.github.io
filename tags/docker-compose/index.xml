@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker Compose on Çetin Boran Mesüm</title>
+    <link>https://cetinboran.github.io/tags/docker-compose/</link>
+    <description>Recent content in Docker Compose on Çetin Boran Mesüm</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 May 2024 17:55:28 +0800</lastBuildDate>
+    <atom:link href="https://cetinboran.github.io/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker 101</title>
+      <link>https://cetinboran.github.io/posts/docker/</link>
+      <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
+      <guid>https://cetinboran.github.io/posts/docker/</guid>
+      <description>1 - Docker 1.1 Konteyner Nedir? Konteyner, bir uygulamanın veya bir hizmetin kendi kütüphaneleri ve bağımlılıkları ile birlikte dış ortam ve uygulamalardan izole bir şekilde tutulmasına denir. Bu, bir tür sanallaştırma teknolojisidir.&#xA;Konteyner != Sanal Makine (VM) Sanal makineler genellikle daha fazla sistem kaynağına ihtiyaç duyar ve daha uzun başlatma sürelerine sahiptir. Konteynerlara kıyasla, hafif ve hızlı dağıtım gerektiren senaryolarda sanal makineler daha ağır bir seçenek olabilir. Sanal makineler, daha fazla izolasyon içeren yerlerde tercih edilebilirler.</description>
+    </item>
+  </channel>
+</rss>

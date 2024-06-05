@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Çetin Boran Mesüm</title>
-    <link>https://cetinboran.github.io/</link>
-    <description>Recent content on Çetin Boran Mesüm</description>
+    <title>Docker on Çetin Boran Mesüm</title>
+    <link>https://cetinboran.github.io/tags/docker/</link>
+    <description>Recent content in Docker on Çetin Boran Mesüm</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 May 2024 17:55:28 +0800</lastBuildDate>
-    <atom:link href="https://cetinboran.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>SQL 101</title>
-      <link>https://cetinboran.github.io/posts/sql-101/</link>
-      <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
-      <guid>https://cetinboran.github.io/posts/sql-101/</guid>
-      <description>1. SQL Bu yazımda temel SQL anlatacağım. Tablo oluşturma, veri ekleme, veri çekme, veri güncelleme, veri silme gibi konulardan bahsedeceğim&#xA;1.1. Veritabanı Kurulumu Kuruluma geçmeden önce bu kurduğumuz veritabanı nedir? Ondan bahsedelim Veritabanı, yapılandırılmış verilerin depolandığı ve yönetildiği bir sistemdir. Bilgiyi organize etmek, erişmek ve güncellemek için kullanılır. Veritabanları genellikle ilişkisel tablolar şeklinde düzenlenir ve SQL gibi sorgu dilleriyle etkileşime girilir.&#xA;SQL nedir ve ne işe yarar&amp;rsquo;a geçmeden önce, uygulamalı bir şekilde öğrenme adımlarımızı takip etmek için bir veritabanı oluşturalım.</description>
-    </item>
+    <atom:link href="https://cetinboran.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Escape</title>
       <link>https://cetinboran.github.io/posts/docker-escape/</link>
@@ -28,13 +21,6 @@
       <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
       <guid>https://cetinboran.github.io/posts/docker/</guid>
       <description>1 - Docker 1.1 Konteyner Nedir? Konteyner, bir uygulamanın veya bir hizmetin kendi kütüphaneleri ve bağımlılıkları ile birlikte dış ortam ve uygulamalardan izole bir şekilde tutulmasına denir. Bu, bir tür sanallaştırma teknolojisidir.&#xA;Konteyner != Sanal Makine (VM) Sanal makineler genellikle daha fazla sistem kaynağına ihtiyaç duyar ve daha uzun başlatma sürelerine sahiptir. Konteynerlara kıyasla, hafif ve hızlı dağıtım gerektiren senaryolarda sanal makineler daha ağır bir seçenek olabilir. Sanal makineler, daha fazla izolasyon içeren yerlerde tercih edilebilirler.</description>
-    </item>
-    <item>
-      <title>Goarg</title>
-      <link>https://cetinboran.github.io/projects/goarg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.github.io/projects/goarg/</guid>
-      <description>Hello</description>
     </item>
   </channel>
 </rss>

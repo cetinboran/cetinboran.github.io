@@ -2,20 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cetinboran.github.io/posts/sql-101/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/posts/docker-escape/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/posts/docker/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/capabilities/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
     <loc>https://cetinboran.github.io/</loc>
-    <lastmod>2024-06-05T20:49:16+03:00</lastmod>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.github.io/pages/</loc>
-    <lastmod>2024-06-05T20:49:16+03:00</lastmod>
+    <loc>https://cetinboran.github.io/tags/container/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.github.io/posts/first/</loc>
-    <lastmod>2024-06-05T20:24:36+03:00</lastmod>
+    <loc>https://cetinboran.github.io/tags/database/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/docker/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/docker-compose/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/dockerfile/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/linux/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/mysql/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
     <loc>https://cetinboran.github.io/posts/</loc>
-    <lastmod>2024-06-05T20:24:36+03:00</lastmod>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/security/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/sql/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.github.io/tags/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
     <loc>https://cetinboran.github.io/categories/</loc>
   </url><url>
-    <loc>https://cetinboran.github.io/tags/</loc>
+    <loc>https://cetinboran.github.io/projects/goarg/</loc>
+  </url><url>
+    <loc>https://cetinboran.github.io/projects/</loc>
   </url>
 </urlset>
