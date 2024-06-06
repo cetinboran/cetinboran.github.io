@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Çetin Boran Mesüm</title>
-    <link>http://localhost:1313/tags/security/</link>
+    <link>https://cetinboran.github.io/tags/security/</link>
     <description>Recent content in Security on Çetin Boran Mesüm</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 May 2024 17:55:28 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cetinboran.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Escape</title>
-      <link>http://localhost:1313/posts/docker-escape/</link>
+      <link>https://cetinboran.github.io/posts/docker-escape/</link>
       <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
-      <guid>http://localhost:1313/posts/docker-escape/</guid>
+      <guid>https://cetinboran.github.io/posts/docker-escape/</guid>
       <description>Docker Escape 1. Docker Escape 1.1 Basics 1.1.1 Capabilities Nedir?&#xA;Bir kullanıcının veya sürecin sahip olduğu özel izinlerdir. Bu izinler, tipik kullanıcı izinlerinin ötesinde, özel işlemler için ayrıcalıklar sağlar.&#xA;Örnek&#xA;Birkaç tane örnek yetenek ve açıklamasını alt tarafta bulabilirsiniz:&#xA;CAP_CHOWN: Dosya sahipliğini değiştirme yeteneği. CAP_NET_BIND_SERVICE: 1024&amp;rsquo;den düşük portlara bağlama yeteneği. CAP_SYS_CHROOT: Chroot sistem çağrısını kullanma yeteneği. Keşif&#xA;Tamam ben yetenekleri anladım, bunları nasıl bulurum?&#xA;Bunun için capsh kullanabiliriz. capsh, linux yeteneklerini incelemek ve yönetmek için kullanılan bir araçtır.</description>
     </item>
   </channel>

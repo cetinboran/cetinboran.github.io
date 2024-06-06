@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on Çetin Boran Mesüm</title>
-    <link>http://localhost:1313/tags/sql/</link>
+    <link>https://cetinboran.github.io/tags/sql/</link>
     <description>Recent content in SQL on Çetin Boran Mesüm</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 May 2024 17:55:28 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cetinboran.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL 101</title>
-      <link>http://localhost:1313/posts/sql-101/</link>
+      <link>https://cetinboran.github.io/posts/sql-101/</link>
       <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
-      <guid>http://localhost:1313/posts/sql-101/</guid>
+      <guid>https://cetinboran.github.io/posts/sql-101/</guid>
       <description>1. SQL Bu yazımda temel SQL anlatacağım. Tablo oluşturma, veri ekleme, veri çekme, veri güncelleme, veri silme gibi konulardan bahsedeceğim&#xA;1.1. Veritabanı Kurulumu Kuruluma geçmeden önce bu kurduğumuz veritabanı nedir? Ondan bahsedelim Veritabanı, yapılandırılmış verilerin depolandığı ve yönetildiği bir sistemdir. Bilgiyi organize etmek, erişmek ve güncellemek için kullanılır. Veritabanları genellikle ilişkisel tablolar şeklinde düzenlenir ve SQL gibi sorgu dilleriyle etkileşime girilir.&#xA;SQL nedir ve ne işe yarar&amp;rsquo;a geçmeden önce, uygulamalı bir şekilde öğrenme adımlarımızı takip etmek için bir veritabanı oluşturalım.</description>
     </item>
   </channel>
