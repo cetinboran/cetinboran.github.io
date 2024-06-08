@@ -1,200 +1,220 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-    <style>
-        :root {
-            --accent-color: #FF4D4D;
-        }
-    </style>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  SQL 101 · Çetin Boran Mesüm
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-    
-    
-    
-    
-    
-    
 
-    
-    <title>SQL 101</title>
-    <meta name="description" content="This is SQL 101">
-    <meta name="keywords" content='cetinboran, cyber security, yavuzlar, Database, MYSQL, SQL'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/sql-101/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="SQL 101">
-    <meta property="og:description" content="This is SQL 101">
-    <meta property="og:image" content="http://localhost:1313/author.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/author.jpg">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SQL 101">
-    <meta name="twitter:description" content="This is SQL 101">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/sql-101/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/sql-101/">
-    <meta name="twitter:image" content="http://localhost:1313/author.jpg">
+<meta name="author" content="Çetin Boran Mesüm">
+<meta name="description" content="This is SQL 101">
+<meta name="keywords" content="programming,cyber security,personal">
 
-    
-    <link rel="canonical" href="http://localhost:1313/posts/sql-101/">
 
-    
-    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SQL 101">
+  <meta name="twitter:description" content="This is SQL 101">
 
-    
-    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+<meta property="og:url" content="http://localhost:1313/posts/sql-101/">
+  <meta property="og:site_name" content="Çetin Boran Mesüm">
+  <meta property="og:title" content="SQL 101">
+  <meta property="og:description" content="This is SQL 101">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-06T17:55:28+08:00">
+    <meta property="article:modified_time" content="2024-05-06T17:55:28+08:00">
+    <meta property="article:tag" content="Database">
+    <meta property="article:tag" content="MYSQL">
+    <meta property="article:tag" content="SQL">
 
-    
-    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
-    
-    <script src="/js/bundle.min.893af8dd3b65bd0ffe90e7af33847bd6dc9180b8fa6d6659a212a6f4b62d3e01.js" integrity="sha256-iTr43TtlvQ/&#43;kOevM4R71tyRgLj6bWZZohKm9LYtPgE="></script>
 
+
+<link rel="canonical" href="http://localhost:1313/posts/sql-101/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
     
     
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
 </head>
-<body>
-        <script>
-            
-            setThemeByUserPref();
-        </script><header class="header">
-    <nav class="header-nav">
 
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Çetin Boran Mesüm
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-        <div class="avatar">
-            <a href="http://localhost:1313/">
-                <img src='/author.jpg' alt="avatar">
-            </a>
-        </div>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
         
-
-        <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">Çetin Boran Mesüm</a>
-        </div>
-
-        <div class="nav-links">
-            
-            <div class="nav-link">
-                <a href="http://localhost:1313/"><span data-feather='home'></span> Home </a>
-            </div>
-            
-            <div class="nav-link">
-                <a href="http://localhost:1313/posts/"><span data-feather='book'></span> Posts </a>
-            </div>
-            
-            <div class="nav-link">
-                <a href="http://localhost:1313/projects/"><span data-feather='code'></span> Projects </a>
-            </div>
-            
-            <div class="nav-link">
-                <a href="http://localhost:1313/tags/"><span data-feather='tag'></span> Tags </a>
-            </div>
-            
-            <div class="nav-link">
-                <a href="https://github.com/cetinboran"><span data-feather='github'></span>  </a>
-            </div>
-            
-
-            <span class="nav-icons-divider"></span>
-            <div class="nav-link dark-theme-toggle">
-                <span class="sr-only dark-theme-toggle-screen-reader-target"></span>
-                <a>
-                    <span class="theme-toggle-icon" data-feather="moon"></span>
-                </a>
-            </div>
-
-            <div class="nav-link" id="hamburger-menu-toggle">
-                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-                <a>
-                    <span data-feather="menu"></span>
-                </a>
-            </div>
-
-            
-            <ul class="nav-hamburger-list visibility-hidden">
-                
-                <li class="nav-item">
-                    <a href="http://localhost:1313/"><span data-feather='home'></span> Home </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="http://localhost:1313/posts/"><span data-feather='book'></span> Posts </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="http://localhost:1313/projects/"><span data-feather='code'></span> Projects </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="http://localhost:1313/tags/"><span data-feather='tag'></span> Tags </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="https://github.com/cetinboran"><span data-feather='github'></span>  </a>
-                </li>
-                
-                <li class="nav-item dark-theme-toggle">
-                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-                    <a>
-                        <span class="theme-toggle-icon" data-feather="moon"></span>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</header>
-<main id="content">
-    <div class="post container">
-    <div class="post-header-section">
-        <h1>SQL 101</h1>
-        <small role="doc-subtitle">This is SQL 101</small>
-        <p class="post-date">May 6, 2024
         
-        </p>
+      </ul>
+    
+  </section>
+</nav>
 
-        <ul class="post-tags">
-        
-            <li class="post-tag"><a href="http://localhost:1313/tags/database">Database</a></li>
-        
-            <li class="post-tag"><a href="http://localhost:1313/tags/mysql">MYSQL</a></li>
-        
-            <li class="post-tag"><a href="http://localhost:1313/tags/sql">SQL</a></li>
-        
-        </ul>
-    </div>
 
-    <div class="post-content">
-        <h1 id="1-sql">1. SQL</h1>
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/posts/sql-101/">
+          SQL 101
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="1-sql">
+  1. SQL
+  <a class="heading-link" href="#1-sql">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
 <p>Bu yazımda temel <strong>SQL</strong> anlatacağım. Tablo oluşturma, veri ekleme, veri çekme, veri güncelleme, veri silme gibi konulardan bahsedeceğim</p>
-<h2 id="11-veritabanı-kurulumu">1.1. Veritabanı Kurulumu</h2>
+<h2 id="11-veritabanı-kurulumu">
+  1.1. Veritabanı Kurulumu
+  <a class="heading-link" href="#11-veritaban%c4%b1-kurulumu">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Kuruluma geçmeden önce bu kurduğumuz <strong>veritabanı</strong> nedir? Ondan bahsedelim Veritabanı, yapılandırılmış verilerin depolandığı ve yönetildiği bir sistemdir. Bilgiyi organize etmek, erişmek ve güncellemek için kullanılır. Veritabanları genellikle ilişkisel <strong>tablolar</strong> şeklinde düzenlenir ve <strong>SQL</strong> gibi sorgu dilleriyle etkileşime girilir.</p>
 <p>SQL nedir ve ne işe yarar&rsquo;a geçmeden önce, uygulamalı bir şekilde öğrenme adımlarımızı takip etmek için bir veritabanı oluşturalım. Bu eğitimde <strong>MYSQL Workbench</strong> kullanacağız. Elbette, <em>PostgreSQL</em>, <em>SQL Server</em> gibi başka veritabanı sistemleri de mevcut, ancak başlangıç için <strong>MYSQL&rsquo;i</strong> tercih edeceğiz. Şimdi kuruluma geçelim.</p>
-<h3 id="111-mysql-workbench">1.1.1. MYSQL Workbench</h3>
-<p>İlk olarak <a href="https://dev.mysql.com/downloads/mysql/">MYSQL Server</a> indirin, ardından
-<a href="https://www.mysql.com/products/workbench/">MYSQL Workbench</a> sitesine girin ve aşağıdaki adımları uygulayarak indirin.</p>
+<h3 id="111-mysql-workbench">
+  1.1.1. MYSQL Workbench
+  <a class="heading-link" href="#111-mysql-workbench">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>İlk olarak <a href="https://dev.mysql.com/downloads/mysql/"  class="external-link" target="_blank" rel="noopener">MYSQL Server</a> indirin, ardından
+<a href="https://www.mysql.com/products/workbench/"  class="external-link" target="_blank" rel="noopener">MYSQL Workbench</a> sitesine girin ve aşağıdaki adımları uygulayarak indirin.</p>
 <p>İlk olarak <strong>MYSQL Server</strong> indirin. Bu olmadan <strong>MYSQL Workbench</strong> kullanılamaz. Çünkü bağlanılacak server ortada yok. Kurulumu basit yukarıdaki siteden indirin.Sadece <strong>&ldquo;Next&rdquo;</strong> düğmesine tıklayarak ilerleyin. Son adımda, size aşağıdaki gibi bir soru sorulacaktır. Tavsiyem, indirmeyi tamamlamak için <strong>&ldquo;COMPLETE&rdquo;</strong> seçeneğini işaretlemenizdir.</p>
-<p><img src="../images/sql101/1.jpg" alt="Kurulum Adımları"></p>
+<p><img alt="Kurulum Adımları" src="../images/sql101/1.jpg"></p>
 <p>Bunları yaptıktan sonra <strong>MYSQL Configurator</strong> penceresi gelecektir. Burada şimdilik bilmeniz gereken tek şey alttaki kısımda giriş yaparken kullanacağınız şifreyi belirtiniz.</p>
-<p><img src="../images/sql101/8.jpg" alt="Kurulum Adımları"></p>
+<p><img alt="Kurulum Adımları" src="../images/sql101/8.jpg"></p>
 <p>Şimdi <strong>MYSQL Workbench</strong> kurulumuna bakalım.</p>
-<p><img src="../images/sql101/1.jpg" alt="Kurulum Adımları"></p>
+<p><img alt="Kurulum Adımları" src="../images/sql101/1.jpg"></p>
 <p>Alt tarafta ise kendi işletim sisteminize göre seçin ve indirmeye başlayın.</p>
-<p><img src="../images/sql101/2.jpg" alt="Kurulum Adımları"></p>
+<p><img alt="Kurulum Adımları" src="../images/sql101/2.jpg"></p>
 <p>İndirme işlemi tamamlandıktan sonra yapılacak işlemler oldukça basittir. Sadece <strong>&ldquo;Next&rdquo;</strong> düğmesine tıklayarak ilerleyin. Son adımda, size aşağıdaki gibi bir soru sorulacaktır. Tavsiyem, indirmeyi tamamlamak için <strong>&ldquo;COMPLETE&rdquo;</strong> seçeneğini işaretlemenizdir. Böylelikle her şeyi ile birlikte bilgisayarınıza inicektir.</p>
-<p><img src="../images/sql101/3.jpg" alt="Kurulum Adımları"></p>
-<h3 id="112-temel-kullanım">1.1.2. Temel Kullanım</h3>
+<p><img alt="Kurulum Adımları" src="../images/sql101/3.jpg"></p>
+<h3 id="112-temel-kullanım">
+  1.1.2. Temel Kullanım
+  <a class="heading-link" href="#112-temel-kullan%c4%b1m">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
 <p>İndirip açıktan sonra alttaki gibi görüntü göreceksiniz. Eğer <strong>MYSQL Server</strong> kurulumunuzda bir sıkıntı var ise bağlanmayacaktır.</p>
-<p><img src="../images/sql101/4.jpg" alt="Kurulum Adımları"></p>
+<p><img alt="Kurulum Adımları" src="../images/sql101/4.jpg"></p>
 <p>Şifreniz ile giriş yaptıktan sonra alttaki gibi bir pencere sizi karşılayacaktır.</p>
-<p><img src="../images/sql101/9.jpg" alt="Kurulum Adımları"></p>
+<p><img alt="Kurulum Adımları" src="../images/sql101/9.jpg"></p>
 <p>Burada 1 ile yazılan kısım Database&rsquo;lerin olduğu yer. 2 ile yazılan kısım ise <strong>SQL</strong> sorgularınızı yazdığınız kısım. 1 Yazan kısıma sağ tıklayıp <strong>Create Schema</strong> ya tıklayıp yeni <strong>database</strong> oluşturunuz.</p>
-<p><img src="../images/sql101/10.jpg" alt="Kurulum Adımları"></p>
+<p><img alt="Kurulum Adımları" src="../images/sql101/10.jpg"></p>
 <p>Oluşturduğunuz database&rsquo;i seçmek için <strong>USE</strong> yazıp sonra adını yazıyoruz. Artık veritabanı hangi database üzerinden işlem yapacağınızı biliyor. Ardından örnek olarak bir tablo oluşturma sorgusu bunun içine yazılabilir. Alt tarafta örneği bulunmaktadır.</p>
 <p>Temel olarak kullanım bu kadar. Şimdi SQL sorgularına geçelim.</p>
-<h2 id="12-nedir">1.2. Nedir?</h2>
+<h2 id="12-nedir">
+  1.2. Nedir?
+  <a class="heading-link" href="#12-nedir">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>SQL (Structured Query Language), veritabanlarında veri depolamak, güncellemek ve sorgulamak için kullanılan bir programlama dilidir.</p>
-<h2 id="13-neden-kullanılır">1.3 Neden Kullanılır?</h2>
+<h2 id="13-neden-kullanılır">
+  1.3 Neden Kullanılır?
+  <a class="heading-link" href="#13-neden-kullan%c4%b1l%c4%b1r">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Bu kısımda örnekler vererek açıklama yapacağım.</p>
 <ul>
 <li>
@@ -205,30 +225,48 @@
 </li>
 </ul>
 <p>Kısaca, hayatımızın her anında gittiğimiz yerler, telefondan girdiğimiz siteler, tıkladığımız linkler ve hatta bir videoyu kaç saniye izlediğimiz bile veritabanlarına SQL yardımıyla kaydediliyor. Peki, bu nasıl yapılır? Hadi bakalım.</p>
-<h1 id="2-sqlde-sorgu-yapısı">2. SQL&rsquo;de Sorgu Yapısı</h1>
+<h1 id="2-sqlde-sorgu-yapısı">
+  2. SQL&rsquo;de Sorgu Yapısı
+  <a class="heading-link" href="#2-sqlde-sorgu-yap%c4%b1s%c4%b1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
 <p>Bu kısımda sorgulara girmeden önce ileride göreceğimiz temel işlemler hakında basit bilgi verip yapılarından bahstedeceğim.</p>
 <p>SQL ile yapabileceğiniz temel işlemler aşağıdaki gibidir.</p>
 <ul>
 <li><strong>SELECT</strong>: Veritabanından veri çekmeyi sağlar.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,...,sutun<span style="color:#f92672">-</span>n <span style="color:#66d9ef">FROM</span> tablo_adi;
-</span></span></code></pre></div><p>Koşul ile birilikte kullanım.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,...,sutun<span style="color:#f92672">-</span>n <span style="color:#66d9ef">FROM</span> tablo_adi <span style="color:#66d9ef">WHERE</span> kosul;
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">sutun</span><span class="o">-</span><span class="mi">2</span><span class="p">,...,</span><span class="n">sutun</span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">tablo_adi</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Koşul ile birilikte kullanım.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">sutun</span><span class="o">-</span><span class="mi">2</span><span class="p">,...,</span><span class="n">sutun</span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">tablo_adi</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">kosul</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><ul>
 <li><strong>INSERT</strong>: Veritabanına veri eklemeyi sağlar.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> tablo_adi (sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,...,sutun<span style="color:#f92672">-</span>n) <span style="color:#66d9ef">VALUES</span> (deger<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,deger<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,...,deger<span style="color:#f92672">-</span>n);
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="n">tablo_adi</span><span class="w"> </span><span class="p">(</span><span class="n">sutun</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">sutun</span><span class="o">-</span><span class="mi">2</span><span class="p">,...,</span><span class="n">sutun</span><span class="o">-</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="n">deger</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">deger</span><span class="o">-</span><span class="mi">2</span><span class="p">,...,</span><span class="n">deger</span><span class="o">-</span><span class="n">n</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><ul>
 <li><strong>UPDATE</strong>: Veritabanında hazır olan veriyi güncellemeyi sağlar.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> tablo_adi <span style="color:#66d9ef">SET</span> sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">=</span> deger<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">=</span> deger<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>, ... sutun<span style="color:#f92672">-</span>n <span style="color:#f92672">=</span> deger<span style="color:#f92672">-</span>n <span style="color:#66d9ef">WHERE</span> kosul;
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">UPDATE</span><span class="w"> </span><span class="n">tablo_adi</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="mi">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deger</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deger</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deger</span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">kosul</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><ul>
 <li><strong>DELETE</strong>: Veritabanında hazır olan veriyi silmeyi sağlar.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> tablo_adi <span style="color:#66d9ef">WHERE</span> kosul;
-</span></span></code></pre></div><p>Yukarıdaki sorgu yapılarında farkındaysanız <strong>WHERE</strong> kullanılıyor. Bunun ile istediğimiz belirli bir veri üzerinde seçme,güncelleme ve silme işlemi yapılabilir. Daha detaylı açıklamayı alt tarafta bulabilirsiniz.</p>
-<h1 id="3-sqlde-temel-işlemler">3. SQL&rsquo;de Temel İşlemler</h1>
-<h2 id="31-tablo-oluşturma-create-table">3.1. Tablo Oluşturma (CREATE TABLE)</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">tablo_adi</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">kosul</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Yukarıdaki sorgu yapılarında farkındaysanız <strong>WHERE</strong> kullanılıyor. Bunun ile istediğimiz belirli bir veri üzerinde seçme,güncelleme ve silme işlemi yapılabilir. Daha detaylı açıklamayı alt tarafta bulabilirsiniz.</p>
+<h1 id="3-sqlde-temel-işlemler">
+  3. SQL&rsquo;de Temel İşlemler
+  <a class="heading-link" href="#3-sqlde-temel-i%c5%9flemler">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="31-tablo-oluşturma-create-table">
+  3.1. Tablo Oluşturma (CREATE TABLE)
+  <a class="heading-link" href="#31-tablo-olu%c5%9fturma-create-table">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p>Tablo oluşturmadan önce, tablonun ne olduğunu ve neden tablo oluşturduğumuzu anlamak önemlidir. Günümüzde, veritabanları verileri tablo dediğimiz yapılar içinde saklar. İşte aşağıda, bir veritabanında tutulan bir tabloyu temsil eden örnek bir yapı:</p>
 <table>
 <thead>
@@ -253,12 +291,12 @@
 </table>
 <p>Tabloların içinde saklanacak veri türlerini biz belirleriz ve yalnızca belirlediğimiz türde veri kabul ederiz.
 Tablo oluştururken ilk olarak <strong>CREATE TABLE</strong> ifadesiyle başlarız ve ardından tablonun adını belirtiriz. Yukarıda belirttiğimiz sütun adını ve alabileceği veri türünü de isimden sonra yazılan () içinde yazarız. İşte bir örnek yapısı:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>    <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> tablo_ismi(
-</span></span><span style="display:flex;"><span>        sütun1 veritürü <span style="color:#960050;background-color:#1e0010">ö</span>zellikler,
-</span></span><span style="display:flex;"><span>        sütun2 veritürü <span style="color:#960050;background-color:#1e0010">ö</span>zellikler,
-</span></span><span style="display:flex;"><span>        sütun3 veritürü <span style="color:#960050;background-color:#1e0010">ö</span>zellikler,
-</span></span><span style="display:flex;"><span>    )
-</span></span></code></pre></div><p>Bu kısımda <strong>sütun</strong> başlıkları belirtilir. <strong>Veri türü</strong> ise bu sütunda hangi tür veri saklanacağını belirtir. Veritabanına göre bu veri türleri değişiklik gösterebilir. İşte alt kısımda örnek veri türü:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">    </span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">tablo_ismi</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">sütun1</span><span class="w"> </span><span class="n">veritürü</span><span class="w"> </span><span class="err">ö</span><span class="n">zellikler</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">sütun2</span><span class="w"> </span><span class="n">veritürü</span><span class="w"> </span><span class="err">ö</span><span class="n">zellikler</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">sütun3</span><span class="w"> </span><span class="n">veritürü</span><span class="w"> </span><span class="err">ö</span><span class="n">zellikler</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><p>Bu kısımda <strong>sütun</strong> başlıkları belirtilir. <strong>Veri türü</strong> ise bu sütunda hangi tür veri saklanacağını belirtir. Veritabanına göre bu veri türleri değişiklik gösterebilir. İşte alt kısımda örnek veri türü:</p>
 <ul>
 <li><strong>VARCHAR (Karakter Dizisi)</strong>: Değişken uzunluktaki metinleri saklamak için kullanılır. Belirli bir maksimum uzunluğa sahip olabilir.</li>
 <li><strong>CHAR (Karakter)</strong>: Sabit uzunluktaki metinleri saklamak için kullanılır. Belirli bir uzunluğa sahip bir karakter dizisi olarak tanımlanır. Karakter dizisi bu uzunlukta değilse, boşluklarla doldurulur.</li>
@@ -274,33 +312,39 @@ Tablo oluştururken ilk olarak <strong>CREATE TABLE</strong> ifadesiyle başlar�
 <li><strong>PRIMARY KEY</strong>: Bu özellik, bir sütunu birincil anahtar olarak belirtir. Her bir satırın benzersiz bir şekilde tanımlanması için kullanılır. Genellikle <strong>PRIMARY KEY</strong> otomatik atanır. Veri oluşturulurken atanmaz.</li>
 </ul>
 <p>Şimdi aşağıda örnek olarak bir tablo oluşturalım. Bu senaryoda bir sitedeki kullanıcı bilgilerini tutan bir tablo oluşturalım</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> users (
-</span></span><span style="display:flex;"><span>    id INT <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>,
-</span></span><span style="display:flex;"><span>    username VARCHAR(<span style="color:#ae81ff">50</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
-</span></span><span style="display:flex;"><span>    email VARCHAR(<span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">UNIQUE</span>,
-</span></span><span style="display:flex;"><span>    password VARCHAR(<span style="color:#ae81ff">50</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
-</span></span><span style="display:flex;"><span>    birthDate DATE,
-</span></span><span style="display:flex;"><span>    registrationDate <span style="color:#66d9ef">TIMESTAMP</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">CURRENT_TIMESTAMP</span>
-</span></span><span style="display:flex;"><span>);
-</span></span></code></pre></div><h2 id="32-seçme-select">3.2. Seçme (SELECT)</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">username</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">email</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">password</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">birthDate</span><span class="w"> </span><span class="nb">DATE</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">registrationDate</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><h2 id="32-seçme-select">
+  3.2. Seçme (SELECT)
+  <a class="heading-link" href="#32-se%c3%a7me-select">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p><strong>SELECT</strong>: Bu sorgu ile tabloya veri çekme işlemini yapacağız.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> sütun<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,sütün<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>,...,sütün<span style="color:#f92672">-</span>n <span style="color:#66d9ef">FROM</span> tablo_ismi;
-</span></span></code></pre></div><p>Bu sorguda, SELECT anahtar kelimesiyle belirli sütunları seçtiğimizi belirtiyoruz. Ardından, virgülle ayrılmış bir şekilde istediğimiz sütun isimlerini yazıyoruz. Burada <code>*</code> koyarsak sütünları belirlediğimiz kısımda bütün sütünları alacaktır. Son olarak, veriyi çekeceğimiz tablonun adını belirtiyoruz. &ldquo;;&rdquo; sembolü sorgunun sonlandığını belirtir.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">sütun</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">sütün</span><span class="o">-</span><span class="mi">2</span><span class="p">,...,</span><span class="n">sütün</span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">tablo_ismi</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Bu sorguda, SELECT anahtar kelimesiyle belirli sütunları seçtiğimizi belirtiyoruz. Ardından, virgülle ayrılmış bir şekilde istediğimiz sütun isimlerini yazıyoruz. Burada <code>*</code> koyarsak sütünları belirlediğimiz kısımda bütün sütünları alacaktır. Son olarak, veriyi çekeceğimiz tablonun adını belirtiyoruz. &ldquo;;&rdquo; sembolü sorgunun sonlandığını belirtir.</p>
 <p>Belirli bir sütunun belirli bir değere sahip olanları döndürmek istiyorsak, SQL&rsquo;de <code>WHERE</code> ifadesini kullanırız. Öncelikle normal bir sorguyu yazıp, ardından <code>WHERE</code> ifadesini kullanarak belirli bir sütunun belirli bir değere eşit olduğu koşulunu ekleriz. Bu koşulu belirtmek için de sütun adını ve istenen değeri kullanırız. Örneğin, <code>WHERE sütun_adı = 'değer'</code> şeklinde bir ifade kullanarak belirli bir sütunun belirli bir değere eşit olan verileri getirebiliriz.</p>
 <p>Aşağıdaki örnekte, <strong>users</strong> tablosundan <em>id</em>, <em>username</em> ve <em>email</em> sütunlarını çekiyorum. Ancak sadece username sütunu <strong>&ldquo;2023an&rdquo;</strong> olan verileri alıyorum.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> id, username, email <span style="color:#66d9ef">FROM</span> users <span style="color:#66d9ef">WHERE</span> username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2023an&#39;</span>;
-</span></span></code></pre></div><p>Özetle <strong>WHERE</strong> kullanarak koşullu sorgular oluşturabiliyoruz.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">username</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2023an&#39;</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Özetle <strong>WHERE</strong> kullanarak koşullu sorgular oluşturabiliyoruz.</p>
 <p>Eğer verilerin belli sıralama ile gelmesini istiyorsak <code>ORDER BY</code> kullanacağız. Bununla ilgili sadece örnek vermek yeterli olucaktır.</p>
 <p>Aşağıdaki örnekte, <strong>users</strong> tablosundan <code>*</code> ile bütün sütunları çekiyorum. Username sütununa göre alfabetik sıralama yapıyorum.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> password <span style="color:#66d9ef">FROM</span> users <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> username;
-</span></span></code></pre></div><p>Son olarak gruplama görelim. Bir kullanıcılar tablosu düşünün. İçerisinde isim, soyisim ve il olarak 3 tane sütun olsun. Benim istediğim hangi ilden kaç tane kullanıcı var onu bulmak istiyorum. Bunun için bilmemiz gereken iki tane yapı var.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">username</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Son olarak gruplama görelim. Bir kullanıcılar tablosu düşünün. İçerisinde isim, soyisim ve il olarak 3 tane sütun olsun. Benim istediğim hangi ilden kaç tane kullanıcı var onu bulmak istiyorum. Bunun için bilmemiz gereken iki tane yapı var.</p>
 <p><strong>COUNT(*)</strong> kullanarak bir tabloda kaç veri olduğunu öğrenebiliriz.</p>
 <p>Aşağıda örnek olarak <strong>users</strong> tablosunda kaç kayıt var onu döndüren soruguyu görebilirsiniz.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> users;
-</span></span></code></pre></div><p><strong>GROUP BY</strong> ile gruplamayı öğreneceğiz</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p><strong>GROUP BY</strong> ile gruplamayı öğreneceğiz</p>
 <p>Aşağıdaki örnekte, <strong>users</strong> tablosundan kullanıcı il&rsquo;ini ve sayısını çekiyoruz ve bunları il&rsquo;e göre grupluyoruz. Ek bilgi olarak burada <strong>AS</strong> anahtar kelimesi ile sütun ismini değiştirebiliyoruz.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> il, <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">AS</span> Toplam <span style="color:#66d9ef">FROM</span> users <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> il;
-</span></span></code></pre></div><p>Aşağıda bu sorgunun örnek bir çıktısını görebilirsiniz.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">il</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">Toplam</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">il</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Aşağıda bu sorgunun örnek bir çıktısını görebilirsiniz.</p>
 <table>
 <thead>
 <tr>
@@ -332,125 +376,126 @@ Tablo oluştururken ilk olarak <strong>CREATE TABLE</strong> ifadesiyle başlar�
 </tr>
 </tbody>
 </table>
-<h2 id="33-ekleme-insert">3.3. Ekleme (INSERT)</h2>
+<h2 id="33-ekleme-insert">
+  3.3. Ekleme (INSERT)
+  <a class="heading-link" href="#33-ekleme-insert">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p><strong>INSERT</strong>: Bu sorgu ile tabloya veri ekleme işlemini yaparız.</p>
 <p>Aşağıdaki örnekte, tablo_adı yazdıktan sonra ilk parantez içinde hangi sütunlara veri yükleyeceğimizi belirliyoruz. Sonrasında VALUES kısmında ise bu sütunlarla ilişkilendirilmiş değerleri belirtiyoruz. Özetle, sütun1 = değer1, sütun2 = değer2 gibi bir eşleştirme yapıyoruz.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> tablo_adı (sütun1, sütun2, sütun3, ...) <span style="color:#66d9ef">VALUES</span> (değer1, değer2, değer3, ...);
-</span></span></code></pre></div><p>Aşağıdaki örnekte, users tablosuna username alanı için <strong>&ldquo;2023an&rdquo;</strong> ve password alanı için <strong>&ldquo;cokgizlisifre123&rdquo;</strong> değerlerini içeren bir veri ekledim.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> users (username, password) <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;2023an&#39;</span>, <span style="color:#e6db74">&#39;cokgizlisifre123&#39;</span>);
-</span></span></code></pre></div><h2 id="34-güncelleme-update">3.4. Güncelleme (UPDATE)</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">tablo_adı</span><span class="w"> </span><span class="p">(</span><span class="n">sütun1</span><span class="p">,</span><span class="w"> </span><span class="n">sütun2</span><span class="p">,</span><span class="w"> </span><span class="n">sütun3</span><span class="p">,</span><span class="w"> </span><span class="p">...)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="n">değer1</span><span class="p">,</span><span class="w"> </span><span class="n">değer2</span><span class="p">,</span><span class="w"> </span><span class="n">değer3</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span><span class="w">
+</span></span></span></code></pre></div><p>Aşağıdaki örnekte, users tablosuna username alanı için <strong>&ldquo;2023an&rdquo;</strong> ve password alanı için <strong>&ldquo;cokgizlisifre123&rdquo;</strong> değerlerini içeren bir veri ekledim.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="n">username</span><span class="p">,</span><span class="w"> </span><span class="n">password</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;2023an&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;cokgizlisifre123&#39;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><h2 id="34-güncelleme-update">
+  3.4. Güncelleme (UPDATE)
+  <a class="heading-link" href="#34-g%c3%bcncelleme-update">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p><strong>UPDATE</strong>:Bu sorgu ile tabloda hazır olan veriyi güncelleriz.</p>
 <p>Aşağıdaki örnekte, <strong>UPDATE</strong> işlemiyle birlikte <strong>SET</strong> anahtar kelimesini kullanarak hangi sütunların güncelleneceğini belirtiriz ve her bir sütunun yeni değerini atarız. Bu sorgu genellikle <strong>WHERE</strong> ile birlikte kullanılır, bu sayede belirli koşullara uyan satırlar güncellenir.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> tablo_adi <span style="color:#66d9ef">SET</span> sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">=</span> deger<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, sutun<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">=</span> deger<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>, ... sutun<span style="color:#f92672">-</span>n <span style="color:#f92672">=</span> deger<span style="color:#f92672">-</span>n <span style="color:#66d9ef">WHERE</span> kosul;
-</span></span></code></pre></div><p>Aşağıdaki örnekte <strong>users</strong> tablosunda <strong>id</strong> değeri 2 olan kullanıcının username&rsquo;ini <em>Kaan</em> olarak değiştiriyorum.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">UPDATE</span> users <span style="color:#66d9ef">SET</span> username<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Kaan&#39;</span> <span style="color:#66d9ef">WHERE</span> id <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
-</span></span></code></pre></div><h2 id="35-silme-delete">3.5. Silme (DELETE)</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">UPDATE</span><span class="w"> </span><span class="n">tablo_adi</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="mi">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deger</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="mi">2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deger</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">sutun</span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deger</span><span class="o">-</span><span class="n">n</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">kosul</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Aşağıdaki örnekte <strong>users</strong> tablosunda <strong>id</strong> değeri 2 olan kullanıcının username&rsquo;ini <em>Kaan</em> olarak değiştiriyorum.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">UPDATE</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">username</span><span class="o">=</span><span class="s1">&#39;Kaan&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><h2 id="35-silme-delete">
+  3.5. Silme (DELETE)
+  <a class="heading-link" href="#35-silme-delete">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
 <p><strong>DELETE</strong>: Bu sorgu ile tabloda olan bir veriyi silebiliyoruz.</p>
 <p>Aşağıdaki örnekte, basit olarak bir silme işlemi yapılmıştır. Tablo içerisinden belli kayıtları sileceğimiz için <strong>WHERE</strong> ile kullanılır.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> tablo_adi <span style="color:#66d9ef">WHERE</span> kosul;
-</span></span></code></pre></div><p>Bu örnekte ise <strong>users</strong> tablosu içerisinde <strong>id</strong> değeri 2 olan kullanıcıyı tablodan sildik.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> users <span style="color:#66d9ef">WHERE</span> id <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
-</span></span></code></pre></div><h1 id="4-kaynakça">4. Kaynakça</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">tablo_adi</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">kosul</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>Bu örnekte ise <strong>users</strong> tablosu içerisinde <strong>id</strong> değeri 2 olan kullanıcıyı tablodan sildik.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><h1 id="4-kaynakça">
+  4. Kaynakça
+  <a class="heading-link" href="#4-kaynak%c3%a7a">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
 <!-- raw HTML omitted -->
 <ul>
-<li><a href="https://www.w3schools.com/sql/">W3Schools</a></li>
-<li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY&amp;ab_channel=freeCodeCamp.org">Free Code Camp</a></li>
+<li><a href="https://www.w3schools.com/sql/"  class="external-link" target="_blank" rel="noopener">W3Schools</a></li>
+<li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY&amp;ab_channel=freeCodeCamp.org"  class="external-link" target="_blank" rel="noopener">Free Code Camp</a></li>
 </ul>
 <!-- raw HTML omitted -->
 
-        
+  </article>
+</section>
+
+  
+
     </div>
 
-    <div class="prev-next">
-        
-    </div>
-
+    <footer class="footer">
+  <section class="container">
+    ©
     
+      2019 -
     
-    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
-        
-        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
-    </svg>
-    <script>
-        let backToTopButton = document.getElementById("btt-button");
-
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopButton.style.display = "block";
-            } else {
-                backToTopButton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            smoothScrollToTop();
-        }
-
-        function smoothScrollToTop() {
-            const scrollToTop = () => {
-                const c = document.documentElement.scrollTop || document.body.scrollTop;
-                if (c > 0) {
-                    window.requestAnimationFrame(scrollToTop);
-                    window.scrollTo(0, c - c / 8);
-                }
-            };
-            scrollToTop();
-        }
-    </script>
+    2024
+     Çetin Boran Mesüm 
+    ·
     
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
-</div>
-
-<aside class="post-toc">
-    <nav id="toc">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#1-sql">1. SQL</a>
-      <ul>
-        <li><a href="#11-veritabanı-kurulumu">1.1. Veritabanı Kurulumu</a>
-          <ul>
-            <li><a href="#111-mysql-workbench">1.1.1. MYSQL Workbench</a></li>
-            <li><a href="#112-temel-kullanım">1.1.2. Temel Kullanım</a></li>
-          </ul>
-        </li>
-        <li><a href="#12-nedir">1.2. Nedir?</a></li>
-        <li><a href="#13-neden-kullanılır">1.3 Neden Kullanılır?</a></li>
-      </ul>
-    </li>
-    <li><a href="#2-sqlde-sorgu-yapısı">2. SQL&rsquo;de Sorgu Yapısı</a></li>
-    <li><a href="#3-sqlde-temel-işlemler">3. SQL&rsquo;de Temel İşlemler</a>
-      <ul>
-        <li><a href="#31-tablo-oluşturma-create-table">3.1. Tablo Oluşturma (CREATE TABLE)</a></li>
-        <li><a href="#32-seçme-select">3.2. Seçme (SELECT)</a></li>
-        <li><a href="#33-ekleme-insert">3.3. Ekleme (INSERT)</a></li>
-        <li><a href="#34-güncelleme-update">3.4. Güncelleme (UPDATE)</a></li>
-        <li><a href="#35-silme-delete">3.5. Silme (DELETE)</a></li>
-      </ul>
-    </li>
-    <li><a href="#4-kaynakça">4. Kaynakça</a></li>
-  </ul>
-</nav>
-    </nav>
-</aside>
-
-
-
-    
-
-        </main><footer class="footer">
-    
-    
-
-    
-    <span>&copy; 2024 Çetin Boran Mesüm</span>
-    
-    <span>
-        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
-    </span>
+  </section>
 </footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 </body>
+
 </html>
