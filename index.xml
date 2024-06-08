@@ -1,68 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gokarna</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Gokarna</description>
+    <title>Çetin Boran Mesüm</title>
+    <link>https://cetinboran.netlify.app/</link>
+    <description>Recent content on Çetin Boran Mesüm</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Apr 2021 23:39:49 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 May 2024 17:55:28 +0800</lastBuildDate>
+    <atom:link href="https://cetinboran.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Theme Documentation - Basics</title>
-      <link>http://localhost:1313/posts/theme-documentation-basics/</link>
-      <pubDate>Fri, 06 Mar 2020 21:29:01 +0800</pubDate>
-      <guid>http://localhost:1313/posts/theme-documentation-basics/</guid>
-      <description>Gokarna is an opinionated theme with a focus on minimalism and simplicity.&#xA;Installation The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.&#xA;a. Create Your Project Hugo provides a new command to create a new website:&#xA;hugo new site my_website cd my_website b. Install the Theme The theme’s repository is: https://github.</description>
+      <title>SQL 101</title>
+      <link>https://cetinboran.netlify.app/posts/sql-101/</link>
+      <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
+      <guid>https://cetinboran.netlify.app/posts/sql-101/</guid>
+      <description>1. SQL Bu yazımda temel SQL anlatacağım. Tablo oluşturma, veri ekleme, veri çekme, veri güncelleme, veri silme gibi konulardan bahsedeceğim&#xA;1.1. Veritabanı Kurulumu Kuruluma geçmeden önce bu kurduğumuz veritabanı nedir? Ondan bahsedelim Veritabanı, yapılandırılmış verilerin depolandığı ve yönetildiği bir sistemdir. Bilgiyi organize etmek, erişmek ve güncellemek için kullanılır. Veritabanları genellikle ilişkisel tablolar şeklinde düzenlenir ve SQL gibi sorgu dilleriyle etkileşime girilir.&#xA;SQL nedir ve ne işe yarar&amp;rsquo;a geçmeden önce, uygulamalı bir şekilde öğrenme adımlarımızı takip etmek için bir veritabanı oluşturalım.</description>
     </item>
     <item>
-      <title>Theme Documentation - Advanced</title>
-      <link>http://localhost:1313/posts/theme-documentation-advanced/</link>
-      <pubDate>Wed, 06 May 2020 21:29:01 +0800</pubDate>
-      <guid>http://localhost:1313/posts/theme-documentation-advanced/</guid>
-      <description>Gokarna is an opinionated theme with a focus on minimalism and simplicity.&#xA;Content Types This theme supports two types of content types: post and page. To specify them, you need to add them in your markdown metadata.&#xA;Post This is the default blog post type which will be shown in your &amp;ldquo;Posts&amp;rdquo; section and who&amp;rsquo;s tags will be indexed. Basically, a normal blog post.&#xA;--- title: &amp;#34;Hello, world!&amp;#34; date: 2021-01-01 description: &amp;#34;A blog post&amp;#34; image: &amp;#34;/path/to/image.</description>
+      <title>Docker 101</title>
+      <link>https://cetinboran.netlify.app/posts/docker/</link>
+      <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
+      <guid>https://cetinboran.netlify.app/posts/docker/</guid>
+      <description>1 - Docker 1.1 Konteyner Nedir? Konteyner, bir uygulamanın veya bir hizmetin kendi kütüphaneleri ve bağımlılıkları ile birlikte dış ortam ve uygulamalardan izole bir şekilde tutulmasına denir. Bu, bir tür sanallaştırma teknolojisidir.&#xA;Konteyner != Sanal Makine (VM) Sanal makineler genellikle daha fazla sistem kaynağına ihtiyaç duyar ve daha uzun başlatma sürelerine sahiptir. Konteynerlara kıyasla, hafif ve hızlı dağıtım gerektiren senaryolarda sanal makineler daha ağır bir seçenek olabilir. Sanal makineler, daha fazla izolasyon içeren yerlerde tercih edilebilirler.</description>
     </item>
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/posts/markdown-syntax/</link>
-      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Emoji Support</title>
-      <link>http://localhost:1313/posts/emoji-support/</link>
-      <pubDate>Thu, 01 Oct 2020 17:55:28 +0800</pubDate>
-      <guid>http://localhost:1313/posts/emoji-support/</guid>
-      <description>Emoji can be enabled in a Hugo project in a number of ways.&#xA;The emojify function can be called directly in templates or Inline Shortcodes.&#xA;To enable emoji globally, set enableEmoji to true in your site configuration and then you can type emoji shorthand codes directly in content files.&#xA;These begin and end with a colon and include the code of an emoji:&#xA;Gone camping! {?:}tent: Be back soon. That is so funny!</description>
-    </item>
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>http://localhost:1313/posts/lorem-ipsum/</link>
-      <pubDate>Thu, 15 Apr 2021 23:39:49 +0530</pubDate>
-      <guid>http://localhost:1313/posts/lorem-ipsum/</guid>
-      <description>Heading 1 &amp;ldquo;Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    <item>
-      <title>Blüdhaven</title>
-      <link>http://localhost:1313/projects/bludhaven/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/bludhaven/</guid>
-      <description>History Blüdhaven was a former whaling town, which was officially incorporated as a &amp;ldquo;Commonwealth&amp;rdquo; in 1912. The town had a generally poor socio-economic populace, owing in part to failed efforts to transform itself into a manufacturing and shipping center.</description>
-    </item>
-    <item>
-      <title>Hydra</title>
-      <link>http://localhost:1313/projects/hydra/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/hydra/</guid>
-      <description>Motto Cut off one head and two will take their place</description>
-    </item>
-    <item>
-      <title>Tatooine</title>
-      <link>http://localhost:1313/projects/tatooine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/tatooine/</guid>
-      <description>A long time ago in a galaxy far, far away&amp;hellip;. A project was planned, but never completed</description>
+      <title>Docker Escape</title>
+      <link>https://cetinboran.netlify.app/posts/docker-escape/</link>
+      <pubDate>Mon, 06 May 2024 17:55:28 +0800</pubDate>
+      <guid>https://cetinboran.netlify.app/posts/docker-escape/</guid>
+      <description>Docker Escape 1. Docker Escape 1.1 Basics 1.1.1 Capabilities Nedir?&#xA;Bir kullanıcının veya sürecin sahip olduğu özel izinlerdir. Bu izinler, tipik kullanıcı izinlerinin ötesinde, özel işlemler için ayrıcalıklar sağlar.&#xA;Örnek&#xA;Birkaç tane örnek yetenek ve açıklamasını alt tarafta bulabilirsiniz:&#xA;CAP_CHOWN: Dosya sahipliğini değiştirme yeteneği. CAP_NET_BIND_SERVICE: 1024&amp;rsquo;den düşük portlara bağlama yeteneği. CAP_SYS_CHROOT: Chroot sistem çağrısını kullanma yeteneği. Keşif&#xA;Tamam ben yetenekleri anladım, bunları nasıl bulurum?&#xA;Bunun için capsh kullanabiliriz. capsh, linux yeteneklerini incelemek ve yönetmek için kullanılan bir araçtır.</description>
     </item>
   </channel>
 </rss>
