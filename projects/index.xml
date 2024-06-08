@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Çetin Boran Mesüm</title>
+    <title>Projects on Gokarna</title>
     <link>http://localhost:1313/projects/</link>
-    <description>Recent content in Projects on Çetin Boran Mesüm</description>
+    <description>Recent content in Projects on Gokarna</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>user@example.com (Hugo Author)</managingEditor>
-    <webMaster>user@example.com (Hugo Author)</webMaster>
-    <copyright>Çetin Boran Mesüm</copyright>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Goarg</title>
-      <link>http://localhost:1313/projects/goarg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>user@example.com (Hugo Author)</author>
-      <guid>http://localhost:1313/projects/goarg/</guid>
-      <description>Hello</description>
+      <title>Blüdhaven</title>
+      <link>http://localhost:1313/projects/bludhaven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bludhaven/</guid>
+      <description>History Blüdhaven was a former whaling town, which was officially incorporated as a &amp;ldquo;Commonwealth&amp;rdquo; in 1912. The town had a generally poor socio-economic populace, owing in part to failed efforts to transform itself into a manufacturing and shipping center.</description>
+    </item>
+    <item>
+      <title>Hydra</title>
+      <link>http://localhost:1313/projects/hydra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/hydra/</guid>
+      <description>Motto Cut off one head and two will take their place</description>
+    </item>
+    <item>
+      <title>Tatooine</title>
+      <link>http://localhost:1313/projects/tatooine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tatooine/</guid>
+      <description>A long time ago in a galaxy far, far away&amp;hellip;. A project was planned, but never completed</description>
     </item>
   </channel>
 </rss>

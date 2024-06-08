@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emoji on johndoe</title>
+    <title>Emoji on Gokarna</title>
     <link>http://localhost:1313/tags/emoji/</link>
-    <description>Recent content in Emoji on johndoe</description>
+    <description>Recent content in Emoji on Gokarna</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 17:55:28 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>http://localhost:1313/posts/docker/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/</guid>
-      <description>1 - Docker&#xD;Link to heading&#xD;1.1 Konteyner&#xD;Link to heading&#xD;Nedir?&#xD;Link to heading&#xD;Konteyner, bir uygulamanın veya bir hizmetin kendi kütüphaneleri ve bağımlılıkları ile birlikte dış ortam ve uygulamalardan izole bir şekilde tutulmasına denir. Bu, bir tür sanallaştırma teknolojisidir.&#xA;Konteyner != Sanal Makine (VM)&#xD;Link to heading&#xD;Sanal makineler genellikle daha fazla sistem kaynağına ihtiyaç duyar ve daha uzun başlatma sürelerine sahiptir. Konteynerlara kıyasla, hafif ve hızlı dağıtım gerektiren senaryolarda sanal makineler daha ağır bir seçenek olabilir.</description>
+      <link>http://localhost:1313/posts/emoji-support/</link>
+      <pubDate>Thu, 01 Oct 2020 17:55:28 +0800</pubDate>
+      <guid>http://localhost:1313/posts/emoji-support/</guid>
+      <description>Emoji can be enabled in a Hugo project in a number of ways.&#xA;The emojify function can be called directly in templates or Inline Shortcodes.&#xA;To enable emoji globally, set enableEmoji to true in your site configuration and then you can type emoji shorthand codes directly in content files.&#xA;These begin and end with a colon and include the code of an emoji:&#xA;Gone camping! {?:}tent: Be back soon. That is so funny!</description>
     </item>
   </channel>
 </rss>

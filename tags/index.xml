@@ -1,81 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Çetin Boran Mesüm</title>
-    <link>https://cetinboran.netlify.app/tags/</link>
-    <description>Recent content in Tags on Çetin Boran Mesüm</description>
+    <title>Tags on Gokarna</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Gokarna</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 May 2024 17:55:28 +0800</lastBuildDate>
-    <atom:link href="https://cetinboran.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Apr 2021 23:39:49 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Capabilities</title>
-      <link>https://cetinboran.netlify.app/tags/capabilities/</link>
+      <title>Def</title>
+      <link>http://localhost:1313/tags/def/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/capabilities/</guid>
+      <guid>http://localhost:1313/tags/def/</guid>
       <description></description>
     </item>
     <item>
-      <title>Container</title>
-      <link>https://cetinboran.netlify.app/tags/container/</link>
+      <title>Xyz</title>
+      <link>http://localhost:1313/tags/xyz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/container/</guid>
+      <guid>http://localhost:1313/tags/xyz/</guid>
       <description></description>
     </item>
     <item>
-      <title>Database</title>
-      <link>https://cetinboran.netlify.app/tags/database/</link>
+      <title>Emoji</title>
+      <link>http://localhost:1313/tags/emoji/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/database/</guid>
+      <guid>http://localhost:1313/tags/emoji/</guid>
       <description></description>
     </item>
     <item>
-      <title>Docker</title>
-      <link>https://cetinboran.netlify.app/tags/docker/</link>
+      <title>Configuration</title>
+      <link>http://localhost:1313/tags/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/docker/</guid>
+      <guid>http://localhost:1313/tags/configuration/</guid>
       <description></description>
     </item>
     <item>
-      <title>Docker Compose</title>
-      <link>https://cetinboran.netlify.app/tags/docker-compose/</link>
+      <title>Installation</title>
+      <link>http://localhost:1313/tags/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/docker-compose/</guid>
+      <guid>http://localhost:1313/tags/installation/</guid>
       <description></description>
     </item>
     <item>
-      <title>Dockerfile</title>
-      <link>https://cetinboran.netlify.app/tags/dockerfile/</link>
+      <title>Markdown</title>
+      <link>http://localhost:1313/tags/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/dockerfile/</guid>
+      <guid>http://localhost:1313/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>https://cetinboran.netlify.app/tags/linux/</link>
+      <title>Css</title>
+      <link>http://localhost:1313/tags/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/css/</guid>
       <description></description>
     </item>
     <item>
-      <title>MYSQL</title>
-      <link>https://cetinboran.netlify.app/tags/mysql/</link>
+      <title>Html</title>
+      <link>http://localhost:1313/tags/html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/mysql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://cetinboran.netlify.app/tags/security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQL</title>
-      <link>https://cetinboran.netlify.app/tags/sql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://cetinboran.netlify.app/tags/sql/</guid>
+      <guid>http://localhost:1313/tags/html/</guid>
       <description></description>
     </item>
   </channel>
