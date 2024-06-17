@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syntax on johndoe</title>
-    <link>http://localhost:1313/categories/syntax/</link>
+    <link>https://cetinboran.com.tr/categories/syntax/</link>
     <description>Recent content in Syntax on johndoe</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cetinboran.com.tr/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>http://localhost:1313/posts/docker/</link>
+      <link>https://cetinboran.com.tr/posts/docker/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker/</guid>
+      <guid>https://cetinboran.com.tr/posts/docker/</guid>
       <description>1 - Docker&#xD;Link to heading&#xD;1.1 Konteyner&#xD;Link to heading&#xD;Nedir?&#xD;Link to heading&#xD;Konteyner, bir uygulamanın veya bir hizmetin kendi kütüphaneleri ve bağımlılıkları ile birlikte dış ortam ve uygulamalardan izole bir şekilde tutulmasına denir. Bu, bir tür sanallaştırma teknolojisidir.&#xA;Konteyner != Sanal Makine (VM)&#xD;Link to heading&#xD;Sanal makineler genellikle daha fazla sistem kaynağına ihtiyaç duyar ve daha uzun başlatma sürelerine sahiptir. Konteynerlara kıyasla, hafif ve hızlı dağıtım gerektiren senaryolarda sanal makineler daha ağır bir seçenek olabilir.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intro on Çetin Boran Mesüm</title>
-    <link>http://localhost:1313/tags/intro/</link>
+    <link>https://cetinboran.com.tr/tags/intro/</link>
     <description>Recent content in Intro on Çetin Boran Mesüm</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Jun 2024 12:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cetinboran.com.tr/tags/intro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>http://localhost:1313/posts/docker/</link>
+      <link>https://cetinboran.com.tr/posts/docker/</link>
       <pubDate>Wed, 05 Jun 2024 12:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/docker/</guid>
+      <guid>https://cetinboran.com.tr/posts/docker/</guid>
       <description>1 - Docker 1.1 Konteyner Nedir? Konteyner, bir uygulamanın veya bir hizmetin kendi kütüphaneleri ve bağımlılıkları ile birlikte dış ortam ve uygulamalardan izole bir şekilde tutulmasına denir. Bu, bir tür sanallaştırma teknolojisidir.&#xA;Konteyner != Sanal Makine (VM) Sanal makineler genellikle daha fazla sistem kaynağına ihtiyaç duyar ve daha uzun başlatma sürelerine sahiptir. Konteynerlara kıyasla, hafif ve hızlı dağıtım gerektiren senaryolarda sanal makineler daha ağır bir seçenek olabilir. Sanal makineler, daha fazla izolasyon içeren yerlerde tercih edilebilirler.</description>
     </item>
   </channel>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Çetin Boran Mesüm</title>
-    <link>http://localhost:1313/pages/</link>
+    <link>https://cetinboran.com.tr/pages/</link>
     <description>Recent content in Pages on Çetin Boran Mesüm</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cetinboran.com.tr/pages/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

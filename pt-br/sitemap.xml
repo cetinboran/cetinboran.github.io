@@ -2,89 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pt-br/authors/</loc>
+    <loc>https://cetinboran.com.tr/pt-br/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/authors/"
+                href="https://cetinboran.com.tr/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/authors/"
+                href="https://cetinboran.com.tr/pt-tr/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/authors/"
+                href="https://cetinboran.com.tr/pt-br/authors/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt-br/categories/</loc>
+    <loc>https://cetinboran.com.tr/pt-br/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://cetinboran.com.tr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/categories/"
+                href="https://cetinboran.com.tr/pt-tr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/categories/"
+                href="https://cetinboran.com.tr/pt-br/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt-br/</loc>
+    <loc>https://cetinboran.com.tr/pt-br/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://cetinboran.com.tr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/"
+                href="https://cetinboran.com.tr/pt-tr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/"
+                href="https://cetinboran.com.tr/pt-br/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt-br/series/</loc>
+    <loc>https://cetinboran.com.tr/pt-br/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://cetinboran.com.tr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/series/"
+                href="https://cetinboran.com.tr/pt-tr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/series/"
+                href="https://cetinboran.com.tr/pt-br/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt-br/tags/</loc>
+    <loc>https://cetinboran.com.tr/pt-br/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://cetinboran.com.tr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/tags/"
+                href="https://cetinboran.com.tr/pt-tr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/"
+                href="https://cetinboran.com.tr/pt-br/tags/"
                 />
   </url>
 </urlset>

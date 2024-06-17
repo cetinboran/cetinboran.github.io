@@ -2,149 +2,149 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/sql-101/</loc>
+    <loc>https://cetinboran.com.tr/posts/sql-101/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker-escape/</loc>
+    <loc>https://cetinboran.com.tr/posts/docker-escape/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/capabilities/</loc>
+    <loc>https://cetinboran.com.tr/tags/capabilities/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/database/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/mysql/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/security/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
-    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://cetinboran.com.tr/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/tags/"
+                href="https://cetinboran.com.tr/pt-br/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/tags/"
+                href="https://cetinboran.com.tr/pt-tr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://cetinboran.com.tr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://cetinboran.com.tr/tags/database/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.com.tr/tags/docker/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.com.tr/tags/linux/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.com.tr/tags/mysql/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.com.tr/posts/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.com.tr/tags/security/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.com.tr/tags/sql/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+  </url><url>
+    <loc>https://cetinboran.com.tr/tags/</loc>
+    <lastmod>2024-05-06T17:55:28+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://cetinboran.com.tr/pt-br/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-tr"
+                href="https://cetinboran.com.tr/pt-tr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cetinboran.com.tr/tags/"
+                />
+  </url><url>
+    <loc>https://cetinboran.com.tr/authors/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/authors/"
+                href="https://cetinboran.com.tr/pt-br/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/authors/"
+                href="https://cetinboran.com.tr/pt-tr/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/authors/"
+                href="https://cetinboran.com.tr/authors/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://cetinboran.com.tr/categories/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/categories/"
+                href="https://cetinboran.com.tr/pt-br/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/categories/"
+                href="https://cetinboran.com.tr/pt-tr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://cetinboran.com.tr/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/authors/%C3%A7etin-boran-mes%C3%BCm/</loc>
+    <loc>https://cetinboran.com.tr/authors/%C3%A7etin-boran-mes%C3%BCm/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/container/</loc>
+    <loc>https://cetinboran.com.tr/tags/container/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/</loc>
+    <loc>https://cetinboran.com.tr/posts/docker/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker-compose/</loc>
+    <loc>https://cetinboran.com.tr/tags/docker-compose/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dockerfile/</loc>
+    <loc>https://cetinboran.com.tr/tags/dockerfile/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://cetinboran.com.tr/series/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/series/"
+                href="https://cetinboran.com.tr/pt-br/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-tr"
-                href="http://localhost:1313/pt-tr/series/"
+                href="https://cetinboran.com.tr/pt-tr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://cetinboran.com.tr/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/series/theme-demo/</loc>
+    <loc>https://cetinboran.com.tr/series/theme-demo/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tools/</loc>
+    <loc>https://cetinboran.com.tr/categories/tools/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/goarg/</loc>
+    <loc>https://cetinboran.com.tr/projects/goarg/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://cetinboran.com.tr/projects/</loc>
   </url>
 </urlset>
