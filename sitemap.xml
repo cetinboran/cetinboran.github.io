@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cetinboran.com.tr/posts/sql-101/</loc>
+    <loc>http://localhost:1313/posts/sql-101/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/posts/docker/</loc>
+    <loc>http://localhost:1313/posts/docker/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/posts/docker-escape/</loc>
+    <loc>http://localhost:1313/posts/docker-escape/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/capabilities/</loc>
+    <loc>http://localhost:1313/tags/capabilities/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/container/</loc>
+    <loc>http://localhost:1313/tags/container/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/database/</loc>
+    <loc>http://localhost:1313/tags/database/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/docker-compose/</loc>
+    <loc>http://localhost:1313/tags/docker-compose/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/dockerfile/</loc>
+    <loc>http://localhost:1313/tags/dockerfile/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/categories/info/</loc>
+    <loc>http://localhost:1313/categories/info/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/mysql/</loc>
+    <loc>http://localhost:1313/tags/mysql/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/categories/privileged/</loc>
+    <loc>http://localhost:1313/categories/privileged/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/security/</loc>
+    <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/sql/</loc>
+    <loc>http://localhost:1313/tags/sql/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url><url>
-    <loc>https://cetinboran.com.tr/categories/tools/</loc>
+    <loc>http://localhost:1313/categories/tools/</loc>
     <lastmod>2024-05-06T17:55:28+08:00</lastmod>
   </url>
 </urlset>
