@@ -2,18 +2,23 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <title>Arzu 💖</title>
+    <title>Arzu</title>
     <style>
+      html,
       body {
         margin: 0;
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
-        background: linear-gradient(135deg, #fbc2eb, #f9c5d1);
         font-family: "Segoe UI", sans-serif;
-        position: relative;
+      }
+
+      /* Başlangıçta siyah arkaplan */
+      body {
+        background: #000;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
       }
 
       /* Giriş ekranı */
@@ -27,17 +32,19 @@
       #login input {
         padding: 10px 20px;
         font-size: 1rem;
-        border: 2px solid #ff69b4;
+        border: 2px solid #fff;
+        background: #000;
+        color: #fff;
         border-radius: 30px;
         outline: none;
       }
 
       #login button {
-        background: #ff69b4;
+        background: #fff;
+        color: #000;
         border: none;
         padding: 10px 30px;
         border-radius: 30px;
-        color: white;
         font-size: 1rem;
         cursor: pointer;
         transition: transform 0.2s;
@@ -48,12 +55,11 @@
       }
 
       #error {
-        color: white;
-        text-shadow: 1px 1px 2px #e75480;
+        color: #fff;
         margin-top: 10px;
       }
 
-      /* Gizli ekran */
+      /* Gizli içerik */
       #hiddenContent {
         display: none;
         width: 100%;
@@ -65,26 +71,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation: gradientBG 15s ease infinite;
       }
 
-      h1 {
-        font-size: 4rem;
-        color: white;
-        text-shadow: 2px 2px 6px #e75480;
-        position: absolute;
-        white-space: nowrap;
-        animation: slide 8s linear infinite;
-      }
-
-      @keyframes slide {
+      @keyframes gradientBG {
         0% {
-          transform: translateX(-100%);
+          background: linear-gradient(135deg, #fbc2eb, #f9c5d1);
         }
         50% {
-          transform: translateX(50%);
+          background: linear-gradient(135deg, #a18cd1, #fbc2eb);
         }
         100% {
-          transform: translateX(100%);
+          background: linear-gradient(135deg, #fbc2eb, #f9c5d1);
         }
       }
 
@@ -190,6 +188,21 @@
         font-size: 1.2rem;
         text-shadow: 1px 1px 3px #e75480;
       }
+
+      .welcome {
+        position: absolute;
+        top: -100px;
+        color: white;
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px #e75480;
+        animation: slideIn 1s forwards;
+      }
+
+      @keyframes slideIn {
+        to {
+          top: 50px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -202,197 +215,69 @@
 
     <!-- Gizli İçerik -->
     <div id="hiddenContent">
-      <h1 id="title">Hayatımın Anlamı</h1>
-      <div class="motivation">Her şey zamanla iyi olacak 💖</div>
+      <div class="welcome">Hoş Geldin!</div>
+      <div class="motivation">Her şey zamanla iyi olacak</div>
       <div class="message" id="message"></div>
       <div class="buttons">
-        <button class="action" onclick="showMessage()">💌 Güzel Söz</button>
-        <button class="action" onclick="launchConfetti()">🎉 Konfeti</button>
+        <button class="action" onclick="showMessage()">Güzel Söz</button>
+        <button class="action" onclick="launchConfetti()">Konfeti</button>
       </div>
     </div>
 
     <script>
-      const _0x27b353 = _0x107d;
-      function _0x597d() {
-        const _0x396b0f = [
-          "message",
-          "348GeQdXV",
-          "length",
-          "appendChild",
-          "10413xFijre",
-          "left",
-          "opacity",
-          "4647176pFOMUL",
-          "2929085lVDGix",
-          "dateInput",
-          "div",
-          "background",
-          "floor",
-          "#ffd1dc",
-          "Yanlış\x20tarih,\x20tekrar\x20dene!",
-          "createElement",
-          "heart",
-          "13.03.2022",
-          "5710041mkdreO",
-          "160092nqnDMm",
-          "error",
-          "animationDuration",
-          "İyi\x20ki\x20varsın\x20💖",
-          "className",
-          "#ffe4e1",
-          "126rRymiD",
-          "24144970LsVVSd",
-          "hiddenContent",
-          "body",
-          "Sen\x20benim\x20en\x20güzel\x20hikayemsin\x20💖",
-          "#ffffff",
-          "title",
-          "#ffe6f2",
-          "Seninle\x20her\x20şey\x20güzel\x20💖",
-          "display",
-          "1177844uCcCzB",
-          "login",
-          "style",
-          "random",
-          "flex",
-          "innerText",
-          ",\x20100%,\x2070%)",
-          "color",
-          "trim",
-          "getElementById",
-          "remove",
-          "Kalbim\x20hep\x20seninle\x20💖",
-          "1rvvxjr",
-          "includes",
-        ];
-        _0x597d = function () {
-          return _0x396b0f;
-        };
-        return _0x597d();
-      }
-      (function (_0x29edea, _0x177109) {
-        const _0x474923 = _0x107d,
-          _0xd16e68 = _0x29edea();
-        while (!![]) {
-          try {
-            const _0x293c03 =
-              (-parseInt(_0x474923(0x1d9)) / 0x1) *
-                (-parseInt(_0x474923(0x1fe)) / 0x2) +
-              (-parseInt(_0x474923(0x1df)) / 0x3) *
-                (parseInt(_0x474923(0x1dc)) / 0x4) +
-              -parseInt(_0x474923(0x1e3)) / 0x5 +
-              (parseInt(_0x474923(0x1ee)) / 0x6) *
-                (-parseInt(_0x474923(0x1f4)) / 0x7) +
-              -parseInt(_0x474923(0x1e2)) / 0x8 +
-              -parseInt(_0x474923(0x1ed)) / 0x9 +
-              parseInt(_0x474923(0x1f5)) / 0xa;
-            if (_0x293c03 === _0x177109) break;
-            else _0xd16e68["push"](_0xd16e68["shift"]());
-          } catch (_0x2cc474) {
-            _0xd16e68["push"](_0xd16e68["shift"]());
-          }
-        }
-      })(_0x597d, 0x668a3);
       function checkDate() {
-        const _0x29c786 = _0x107d,
-          _0x934b9c = document[_0x29c786(0x1d6)](_0x29c786(0x1e4))["value"][
-            _0x29c786(0x1d5)
-          ](),
-          _0x3111a0 = document[_0x29c786(0x1d6)](_0x29c786(0x1ef));
-        _0x934b9c === _0x29c786(0x1ec)
-          ? ((document[_0x29c786(0x1d6)](_0x29c786(0x1ff))[_0x29c786(0x1cf)][
-              "display"
-            ] = "none"),
-            (document["getElementById"](_0x29c786(0x1f6))[_0x29c786(0x1cf)][
-              _0x29c786(0x1fd)
-            ] = _0x29c786(0x1d1)))
-          : (_0x3111a0[_0x29c786(0x1d2)] = _0x29c786(0x1e9));
+        const input = document.getElementById("dateInput").value.trim();
+        const error = document.getElementById("error");
+        if (input === "13.03.2022") {
+          document.getElementById("login").style.display = "none";
+          document.getElementById("hiddenContent").style.display = "flex";
+        } else {
+          error.innerText = "Yanlış tarih, tekrar dene!";
+        }
       }
+
       function createHeart() {
-        const _0x22648f = _0x107d;
         if (
-          !document[_0x22648f(0x1d6)](_0x22648f(0x1f6))[_0x22648f(0x1cf)][
-            "display"
-          ][_0x22648f(0x1da)](_0x22648f(0x1d1))
+          !document
+            .getElementById("hiddenContent")
+            .style.display.includes("flex")
         )
           return;
-        const _0x2db8e5 = document[_0x22648f(0x1ea)]("div");
-        (_0x2db8e5[_0x22648f(0x1f2)] = _0x22648f(0x1eb)),
-          (_0x2db8e5[_0x22648f(0x1cf)]["left"] =
-            Math[_0x22648f(0x1d0)]() * 0x64 + "vw"),
-          (_0x2db8e5["style"][_0x22648f(0x1f0)] =
-            0x4 + Math[_0x22648f(0x1d0)]() * 0x2 + "s"),
-          document[_0x22648f(0x1f7)][_0x22648f(0x1de)](_0x2db8e5),
-          setTimeout(() => _0x2db8e5[_0x22648f(0x1d7)](), 0x1770);
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        heart.style.animationDuration = 4 + Math.random() * 2 + "s";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 6000);
       }
-      setInterval(createHeart, 0x12c);
-      function _0x107d(_0x20f9b5, _0xa7612f) {
-        const _0x597d88 = _0x597d();
-        return (
-          (_0x107d = function (_0x107d6e, _0x500fed) {
-            _0x107d6e = _0x107d6e - 0x1cf;
-            let _0x2d08af = _0x597d88[_0x107d6e];
-            return _0x2d08af;
-          }),
-          _0x107d(_0x20f9b5, _0xa7612f)
-        );
-      }
-      const title = document["getElementById"](_0x27b353(0x1fa)),
-        colors = [
-          _0x27b353(0x1f9),
-          _0x27b353(0x1e8),
-          _0x27b353(0x1f3),
-          "#fff0f5",
-          _0x27b353(0x1fb),
-        ];
-      setInterval(() => {
-        const _0x5e5f93 = _0x27b353;
-        if (
-          !document[_0x5e5f93(0x1d6)](_0x5e5f93(0x1f6))[_0x5e5f93(0x1cf)][
-            _0x5e5f93(0x1fd)
-          ]["includes"](_0x5e5f93(0x1d1))
-        )
-          return;
-        const _0x2ee0ad =
-          colors[
-            Math[_0x5e5f93(0x1e7)](Math[_0x5e5f93(0x1d0)]() * colors["length"])
-          ];
-        title["style"][_0x5e5f93(0x1d4)] = _0x2ee0ad;
-      }, 0x7d0);
+      setInterval(createHeart, 300);
+
       const messages = [
-        _0x27b353(0x1f8),
-        _0x27b353(0x1d8),
-        _0x27b353(0x1fc),
-        _0x27b353(0x1f1),
+        "Sen benim en güzel hikayemsin",
+        "Kalbim hep seninle",
+        "Seninle her şey güzel",
+        "İyi ki varsın",
       ];
+
       function showMessage() {
-        const _0x4d0baa = _0x27b353,
-          _0xdcac70 = document[_0x4d0baa(0x1d6)](_0x4d0baa(0x1db));
-        (_0xdcac70["innerText"] =
-          messages[
-            Math[_0x4d0baa(0x1e7)](
-              Math[_0x4d0baa(0x1d0)]() * messages[_0x4d0baa(0x1dd)]
-            )
-          ]),
-          (_0xdcac70[_0x4d0baa(0x1cf)][_0x4d0baa(0x1e1)] = 0x1),
-          setTimeout(() => {
-            const _0x4cbbff = _0x4d0baa;
-            _0xdcac70[_0x4cbbff(0x1cf)][_0x4cbbff(0x1e1)] = 0x0;
-          }, 0xbb8);
+        const msg = document.getElementById("message");
+        msg.innerText = messages[Math.floor(Math.random() * messages.length)];
+        msg.style.opacity = 1;
+        setTimeout(() => {
+          msg.style.opacity = 0;
+        }, 3000);
       }
+
       function launchConfetti() {
-        const _0x1c9109 = _0x27b353;
-        for (let _0xdcb1df = 0x0; _0xdcb1df < 0x32; _0xdcb1df++) {
-          const _0x5e0021 = document[_0x1c9109(0x1ea)](_0x1c9109(0x1e5));
-          (_0x5e0021["className"] = "confetti"),
-            (_0x5e0021[_0x1c9109(0x1cf)][_0x1c9109(0x1e0)] =
-              Math["random"]() * 0x64 + "vw"),
-            (_0x5e0021["style"][_0x1c9109(0x1e6)] =
-              "hsl(" + Math["random"]() * 0x168 + _0x1c9109(0x1d3)),
-            (_0x5e0021[_0x1c9109(0x1cf)][_0x1c9109(0x1f0)] =
-              0x2 + Math[_0x1c9109(0x1d0)]() * 0x2 + "s"),
-            document[_0x1c9109(0x1f7)]["appendChild"](_0x5e0021),
-            setTimeout(() => _0x5e0021["remove"](), 0xfa0);
+        for (let i = 0; i < 50; i++) {
+          const confetti = document.createElement("div");
+          confetti.className = "confetti";
+          confetti.style.left = Math.random() * 100 + "vw";
+          confetti.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;
+          confetti.style.animationDuration = 2 + Math.random() * 2 + "s";
+          document.body.appendChild(confetti);
+          setTimeout(() => confetti.remove(), 4000);
         }
       }
     </script>
