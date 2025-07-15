@@ -2,7 +2,7 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <title>Arzu</title>
+    <title>Gizli</title>
     <style>
       html,
       body {
@@ -71,18 +71,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        animation: gradientBG 15s ease infinite;
+        background: url("1.jpeg") center/cover no-repeat;
+        animation: bgSwap 15s ease infinite alternate;
       }
 
-      @keyframes gradientBG {
+      @keyframes bgSwap {
         0% {
-          background: linear-gradient(135deg, #fbc2eb, #f9c5d1);
+          background: url("1.jpeg") center/cover no-repeat;
         }
         50% {
-          background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+          background: url("3.jpeg") center/cover no-repeat;
         }
         100% {
-          background: linear-gradient(135deg, #fbc2eb, #f9c5d1);
+          background: url("1.jpeg") center/cover no-repeat;
         }
       }
 
@@ -215,69 +216,182 @@
 
     <!-- Gizli İçerik -->
     <div id="hiddenContent">
-      <div class="welcome">Hoş Geldin!</div>
+      <div class="welcome">Slm Cnm</div>
       <div class="motivation">Her şey zamanla iyi olacak</div>
       <div class="message" id="message"></div>
       <div class="buttons">
-        <button class="action" onclick="showMessage()">Güzel Söz</button>
+        <button class="action" onclick="showMessage()">Sözler</button>
         <button class="action" onclick="launchConfetti()">Konfeti</button>
       </div>
     </div>
 
+    <style>
+      #hiddenContent {
+        display: none;
+        /* diğer stiller */
+      }
+      #hiddenContent.show {
+        display: flex !important;
+      }
+    </style>
+
     <script>
-      function checkDate() {
-        const input = document.getElementById("dateInput").value.trim();
-        const error = document.getElementById("error");
-        if (input === "13.03.2022") {
-          document.getElementById("login").style.display = "none";
-          document.getElementById("hiddenContent").style.display = "flex";
-        } else {
-          error.innerText = "Yanlış tarih, tekrar dene!";
+      const _0x49e2f8 = _0x8866;
+      function _0x8866(_0x4c89b3, _0x4f4227) {
+        const _0xb3ef12 = _0xb3ef();
+        return (
+          (_0x8866 = function (_0x88668, _0x881f74) {
+            _0x88668 = _0x88668 - 0xb8;
+            let _0x35090e = _0xb3ef12[_0x88668];
+            return _0x35090e;
+          }),
+          _0x8866(_0x4c89b3, _0x4f4227)
+        );
+      }
+      (function (_0x5c8b52, _0x4e7899) {
+        const _0x5478ed = _0x8866,
+          _0x299455 = _0x5c8b52();
+        while (!![]) {
+          try {
+            const _0x562818 =
+              -parseInt(_0x5478ed(0xc3)) / 0x1 +
+              (-parseInt(_0x5478ed(0xde)) / 0x2) *
+                (parseInt(_0x5478ed(0xc4)) / 0x3) +
+              (parseInt(_0x5478ed(0xc8)) / 0x4) *
+                (parseInt(_0x5478ed(0xc9)) / 0x5) +
+              -parseInt(_0x5478ed(0xc5)) / 0x6 +
+              (parseInt(_0x5478ed(0xdc)) / 0x7) *
+                (-parseInt(_0x5478ed(0xbb)) / 0x8) +
+              (-parseInt(_0x5478ed(0xd1)) / 0x9) *
+                (-parseInt(_0x5478ed(0xbd)) / 0xa) +
+              parseInt(_0x5478ed(0xd7)) / 0xb;
+            if (_0x562818 === _0x4e7899) break;
+            else _0x299455["push"](_0x299455["shift"]());
+          } catch (_0x52a828) {
+            _0x299455["push"](_0x299455["shift"]());
+          }
         }
+      })(_0xb3ef, 0x5bdad);
+      function checkDate() {
+        const _0xd2cd57 = _0x8866,
+          _0x2837fe = document[_0xd2cd57(0xd2)](_0xd2cd57(0xcc))["value"][
+            "trim"
+          ](),
+          _0x5c2be3 = document["getElementById"]("error");
+        _0x2837fe === _0xd2cd57(0xc0)
+          ? ((document["getElementById"](_0xd2cd57(0xdb))[_0xd2cd57(0xbe)][
+              "display"
+            ] = "none"),
+            document[_0xd2cd57(0xd2)](_0xd2cd57(0xcb))[_0xd2cd57(0xd8)][
+              _0xd2cd57(0xcd)
+            ]("show"))
+          : (_0x5c2be3["innerText"] = _0xd2cd57(0xce));
       }
-
       function createHeart() {
-        if (
-          !document
-            .getElementById("hiddenContent")
-            .style.display.includes("flex")
-        )
-          return;
-        const heart = document.createElement("div");
-        heart.className = "heart";
-        heart.style.left = Math.random() * 100 + "vw";
-        heart.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;
-        heart.style.animationDuration = 4 + Math.random() * 2 + "s";
-        document.body.appendChild(heart);
-        setTimeout(() => heart.remove(), 6000);
+        const _0x3125a8 = _0x8866,
+          _0x2941f6 = document[_0x3125a8(0xd2)]("hiddenContent");
+        if (!_0x2941f6[_0x3125a8(0xd8)][_0x3125a8(0xdd)]("show")) return;
+        const _0x551fdd = document[_0x3125a8(0xdf)](_0x3125a8(0xd6));
+        (_0x551fdd[_0x3125a8(0xcf)] = _0x3125a8(0xe0)),
+          (_0x551fdd[_0x3125a8(0xbe)]["left"] =
+            Math[_0x3125a8(0xbc)]() * 0x64 + "vw"),
+          (_0x551fdd[_0x3125a8(0xbe)][_0x3125a8(0xba)] =
+            _0x3125a8(0xc2) +
+            Math[_0x3125a8(0xbc)]() * 0x168 +
+            _0x3125a8(0xbf)),
+          (_0x551fdd["style"][_0x3125a8(0xb9)] =
+            0x4 + Math[_0x3125a8(0xbc)]() * 0x2 + "s"),
+          document["body"][_0x3125a8(0xda)](_0x551fdd),
+          setTimeout(() => _0x551fdd[_0x3125a8(0xc6)](), 0x1770);
       }
-      setInterval(createHeart, 300);
-
+      setInterval(createHeart, 0x12c);
+      function _0xb3ef() {
+        const _0x204051 = [
+          "3638230lqFjXr",
+          "style",
+          ",\x20100%,\x2070%)",
+          "13.03.2022",
+          "floor",
+          "hsl(",
+          "189354xQwTev",
+          "270948FFtCxm",
+          "1669764hPPmEH",
+          "remove",
+          "opacity",
+          "660zTPXGU",
+          "10830AqfYjt",
+          "message",
+          "hiddenContent",
+          "dateInput",
+          "add",
+          "Yanlış\x20tarih,\x20tekrar\x20dene!",
+          "className",
+          "nbrsn",
+          "9ugtqtt",
+          "getElementById",
+          "İyi\x20ki\x20varsın",
+          "ne\x20bakıyon\x20mal\x20mal",
+          "Seninle\x20her\x20şey\x20güzel",
+          "div",
+          "11397958OiPxjo",
+          "classList",
+          "confetti",
+          "appendChild",
+          "login",
+          "14awkbHb",
+          "contains",
+          "10NMhRWz",
+          "createElement",
+          "heart",
+          "body",
+          "animationDuration",
+          "background",
+          "1847704GoLuEe",
+          "random",
+        ];
+        _0xb3ef = function () {
+          return _0x204051;
+        };
+        return _0xb3ef();
+      }
       const messages = [
-        "Sen benim en güzel hikayemsin",
-        "Kalbim hep seninle",
-        "Seninle her şey güzel",
-        "İyi ki varsın",
+        _0x49e2f8(0xd5),
+        _0x49e2f8(0xd3),
+        "slm\x20cnm",
+        _0x49e2f8(0xd0),
+        _0x49e2f8(0xd4),
+        "deişik\x20misin",
+        "Allah\x27tan\x20mütüşüm",
+        "Güzel\x20kız",
       ];
-
       function showMessage() {
-        const msg = document.getElementById("message");
-        msg.innerText = messages[Math.floor(Math.random() * messages.length)];
-        msg.style.opacity = 1;
-        setTimeout(() => {
-          msg.style.opacity = 0;
-        }, 3000);
+        const _0x482f3f = _0x49e2f8,
+          _0x1a9577 = document[_0x482f3f(0xd2)](_0x482f3f(0xca));
+        (_0x1a9577["innerText"] =
+          messages[
+            Math[_0x482f3f(0xc1)](Math[_0x482f3f(0xbc)]() * messages["length"])
+          ]),
+          (_0x1a9577[_0x482f3f(0xbe)]["opacity"] = 0x1),
+          setTimeout(() => {
+            const _0x1c46fe = _0x482f3f;
+            _0x1a9577[_0x1c46fe(0xbe)][_0x1c46fe(0xc7)] = 0x0;
+          }, 0xbb8);
       }
-
       function launchConfetti() {
-        for (let i = 0; i < 50; i++) {
-          const confetti = document.createElement("div");
-          confetti.className = "confetti";
-          confetti.style.left = Math.random() * 100 + "vw";
-          confetti.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;
-          confetti.style.animationDuration = 2 + Math.random() * 2 + "s";
-          document.body.appendChild(confetti);
-          setTimeout(() => confetti.remove(), 4000);
+        const _0x155a17 = _0x49e2f8;
+        for (let _0x4ab3f4 = 0x0; _0x4ab3f4 < 0x32; _0x4ab3f4++) {
+          const _0x1e7724 = document[_0x155a17(0xdf)](_0x155a17(0xd6));
+          (_0x1e7724[_0x155a17(0xcf)] = _0x155a17(0xd9)),
+            (_0x1e7724[_0x155a17(0xbe)]["left"] =
+              Math["random"]() * 0x64 + "vw"),
+            (_0x1e7724["style"]["background"] =
+              _0x155a17(0xc2) +
+              Math[_0x155a17(0xbc)]() * 0x168 +
+              _0x155a17(0xbf)),
+            (_0x1e7724[_0x155a17(0xbe)]["animationDuration"] =
+              0x2 + Math["random"]() * 0x2 + "s"),
+            document[_0x155a17(0xb8)][_0x155a17(0xda)](_0x1e7724),
+            setTimeout(() => _0x1e7724[_0x155a17(0xc6)](), 0xfa0);
         }
       }
     </script>
