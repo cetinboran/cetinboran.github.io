@@ -1,0 +1,80 @@
+/* privacy.css: privacy page + print */
+.privacy-shell {
+  padding-top: clamp(2rem, 5vw, 3rem);
+}
+
+.privacy-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: var(--space-4);
+  padding: clamp(1.3rem, 3vw, 2rem);
+}
+
+.privacy-title {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.privacy-meta {
+  color: #60736e;
+  font-size: 0.92rem;
+}
+
+.privacy-section {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.privacy-section h2 {
+  font-size: 1.15rem;
+}
+
+.privacy-list {
+  display: grid;
+  gap: var(--space-2);
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.print-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media print {
+  :root {
+    --bg: #fff;
+    --surface: #fff;
+    --surface-soft: #fff;
+    --text: #111;
+    --text-muted: #222;
+    --border: #ddd;
+  }
+
+  body {
+    background: #fff;
+    color: #111;
+  }
+
+  .site-header,
+  .site-footer,
+  .print-hidden,
+  .skip-link {
+    display: none !important;
+  }
+
+  .privacy-card {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  a {
+    color: #111;
+    text-decoration: underline;
+  }
+}

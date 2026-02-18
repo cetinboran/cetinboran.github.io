@@ -1,2 +1,0 @@
-# cetinboran
-My site

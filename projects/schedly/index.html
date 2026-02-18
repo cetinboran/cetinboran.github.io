@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr" data-domain="cetinboran.com.tr" data-depth="2">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base id="base-url" href="https://cetinboran.com.tr/">
+  <script>
+    (function () {
+      const canonicalDomain = "cetinboran.com.tr";
+      const currentHost = window.location.hostname;
+      const isFile = window.location.protocol === "file:";
+      const isLocalHost = !isFile && currentHost !== canonicalDomain;
+      if (!isFile && !isLocalHost) return;
+
+      const base = document.getElementById("base-url");
+      if (!base) return;
+
+      if (isFile) {
+        const depth = Number(document.documentElement.dataset.depth || "0");
+        const prefix = depth > 0 ? "../".repeat(depth) : "./";
+        base.setAttribute("href", prefix);
+        return;
+      }
+
+      base.setAttribute("href", `${window.location.origin}/`);
+    })();
+  </script>
+  <meta name="site-domain" content="cetinboran.com.tr">
+  <title>Schedly Projesi | Çetin Boran</title>
+  <meta name="description" content="Schedly: Koçlar için randevu ve öğrenci yönetimi platformu.">
+  <link rel="canonical" href="https://cetinboran.com.tr/projects/schedly/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Schedly Projesi | Çetin Boran">
+  <meta property="og:description" content="Koçlar için randevu ve öğrenci yönetimi.">
+  <meta property="og:url" content="https://cetinboran.com.tr/projects/schedly/">
+  <meta property="og:image" content="https://cetinboran.com.tr/assets/img/author.jpg">
+  <link rel="icon" type="image/png" href="assets/img/code.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="https://cetinboran.com.tr/#main-content">İçeriğe geç</a>
+
+  <header class="site-header" data-site-header>
+    <div class="container site-nav-wrap">
+      <a class="brand" href="https://cetinboran.com.tr/#home" aria-label="Ana sayfaya git"><img class="brand-logo" src="assets/img/author.jpg" alt="Çetin Boran profil resmi" width="36" height="36"><span>Çetin Boran</span></a>
+      <nav aria-label="Ana gezinme">
+        <ul class="site-nav">
+          <li><a class="nav-link" data-nav-link href="https://cetinboran.com.tr/#home">Ana Sayfa</a></li>
+          <li><a class="nav-link" data-nav-link href="https://cetinboran.com.tr/#projects">Projeler</a></li>
+          <li><a class="nav-link" data-nav-link href="https://cetinboran.com.tr/#contact">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section container">
+    <nav aria-label="Breadcrumb" class="mb-4">
+      <ol class="breadcrumb">
+        <li><a href="https://cetinboran.com.tr/">Ana Sayfa</a></li>
+        <li class="breadcrumb-sep">&gt;</li>
+        <li><a href="https://cetinboran.com.tr/#projects">Projeler</a></li>
+        <li class="breadcrumb-sep">&gt;</li>
+        <li aria-current="page">Schedly</li>
+      </ol>
+    </nav>
+
+    <header class="project-header reveal">
+      <span class="project-badge">SaaS / Koçluk / Ürün</span>
+      <h1>Schedly</h1>
+      <p class="project-subtitle">Koçlar için randevu ve öğrenci yönetimi.</p>
+    </header>
+
+    <section class="project-content project-meta mt-4">
+      <article class="project-panel reveal">
+        <h2>Proje Özeti</h2>
+        <p>
+          Schedly, danışan takibi, takvim planlama ve iletişim süreçlerini tek panelde birleştiren bir ürün.
+          Özellikle birebir çalışan koçların operasyonel yükünü azaltmayı hedefler.
+        </p>
+        <ul class="project-list">
+          <li>Takvim ve randevu yönetimi</li>
+          <li>Öğrenci/danışan profili ve not yönetimi</li>
+          <li>Ödeme ve takip süreçleri için ölçeklenebilir altyapı</li>
+        </ul>
+      </article>
+
+      <aside class="project-panel reveal" aria-label="Proje bağlantıları">
+        <h2>Bağlantılar</h2>
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://example.com/schedly-product" target="_blank" rel="noopener">Ürün Linki (Yakında)</a>
+          <a class="btn btn-ghost" href="https://useschedly.com" target="_blank" rel="noopener">Siteyi ziyaret et</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-current-year>2026</span> Çetin Boran.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/pages/project.js"></script>
+</body>
+</html>

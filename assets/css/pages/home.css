@@ -1,0 +1,97 @@
+/* home.css: index page specific */
+.hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-5);
+  padding-top: clamp(3rem, 8vw, 5.5rem);
+}
+
+.hero-media {
+  max-width: 180px;
+}
+
+.hero-avatar {
+  aspect-ratio: 1 / 1;
+  border: 3px solid rgba(21, 122, 110, 0.16);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+
+.hero-copy {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  max-width: 60ch;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.about-card {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.projects-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.project-card-footer {
+  align-items: center;
+  color: var(--accent-strong);
+  display: flex;
+  font-size: 0.92rem;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.contact-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.contact-card {
+  background: linear-gradient(150deg, #ffffff 0%, #f5faf8 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.contact-link {
+  color: var(--accent-strong);
+  font-weight: 600;
+  word-break: break-word;
+}
+
+@media (min-width: 860px) {
+  .hero {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
