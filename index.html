@@ -1,384 +1,181 @@
 <!doctype html>
-<html lang="tr" data-domain="cetinboran.com.tr" data-depth="0">
+<html lang="tr" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <base id="base-url" href="https://cetinboran.com.tr/" />
-    <script>
-      (function () {
-        const canonicalDomain = "cetinboran.com.tr";
-        const currentHost = window.location.hostname;
-        const isFile = window.location.protocol === "file:";
-        const isLocalHost = !isFile && currentHost !== canonicalDomain;
-        if (!isFile && !isLocalHost) return;
-
-        const base = document.getElementById("base-url");
-        if (!base) return;
-
-        if (isFile) {
-          const depth = Number(document.documentElement.dataset.depth || "0");
-          const prefix = depth > 0 ? "../".repeat(depth) : "./";
-          base.setAttribute("href", prefix);
-          return;
-        }
-
-        base.setAttribute("href", `${window.location.origin}/`);
-      })();
-    </script>
-    <meta name="site-domain" content="cetinboran.com.tr" />
-    <title>Çetin Boran | Yazılım Geliştirici</title>
+    <title>Çetin Boran Mesüm | Ürün Odaklı Yazılım Geliştirici</title>
     <meta
       name="description"
-      content="Çetin Boran'ın kişisel portfolyo sitesi. Projeler, teknik uzmanlıklar ve iletişim bilgileri."
+      content="Çetin Boran Mesüm; Schedly, SaaS ürünleri, backend sistemleri, mobil uygulamalar ve otomasyon odaklı yazılımlar geliştirir."
     />
+    <meta name="author" content="Çetin Boran Mesüm" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://cetinboran.com.tr/" />
+    <link rel="alternate" href="https://cetinboran.com.tr/" hreflang="tr" />
+    <link rel="alternate" href="https://cetinboran.com.tr/" hreflang="en" />
+    <link rel="alternate" href="https://cetinboran.com.tr/" hreflang="x-default" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Çetin Boran | Yazılım Geliştirici" />
-    <meta
-      property="og:description"
-      content="Modern ürünler, ölçeklenebilir sistemler ve kullanıcı odaklı dijital deneyimler."
-    />
+    <meta property="og:site_name" content="Çetin Boran Mesüm" />
+    <meta property="og:title" content="Çetin Boran Mesüm | Ürün Odaklı Yazılım Geliştirici" />
+    <meta property="og:description" content="Pratik yazılım ürünleri, SaaS araçları, backend sistemleri, mobil uygulamalar ve otomasyon çözümleri." />
     <meta property="og:url" content="https://cetinboran.com.tr/" />
-    <meta
-      property="og:image"
-      content="https://cetinboran.com.tr/assets/img/author.jpg"
-    />
+    <meta property="og:image" content="https://cetinboran.com.tr/assets/img/author.jpg" />
+    <meta property="og:image:alt" content="Çetin Boran Mesüm profil fotoğrafı" />
     <meta property="og:locale" content="tr_TR" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Çetin Boran | Yazılım Geliştirici" />
-    <meta
-      name="twitter:description"
-      content="Projelerimi ve çalışma yaklaşımımı keşfedin."
-    />
-    <meta
-      name="twitter:image"
-      content="https://cetinboran.com.tr/assets/img/author.jpg"
-    />
-    <link rel="icon" type="image/png" href="https://cetinboran.com.tr/assets/img/code.png" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="twitter:title" content="Cetin Boran Mesum | Product-focused Software Developer" />
+    <meta name="twitter:description" content="Practical SaaS projects, backend systems, mobile apps, and automation-focused software." />
+    <meta name="twitter:image" content="https://cetinboran.com.tr/assets/img/author.jpg" />
+    <link rel="icon" type="image/png" href="assets/img/code.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/theme-init.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Çetin Boran",
-        "url": "https://cetinboran.com.tr/",
-        "image": "https://cetinboran.com.tr/assets/img/author.jpg",
-        "jobTitle": "Frontend & Product Engineer",
-        "knowsAbout": ["Go", "Backend", "Mobile", "Security", "System Design"],
-        "sameAs": [
-          "https://github.com/cetinboran",
-          "https://www.linkedin.com/in/cetinboran"
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://cetinboran.com.tr/#person",
+            "name": "Çetin Boran Mesüm",
+            "alternateName": "Cetin Boran Mesum",
+            "url": "https://cetinboran.com.tr/",
+            "image": "https://cetinboran.com.tr/assets/img/author.jpg",
+            "jobTitle": "Software Developer",
+            "email": "mailto:cetinmesum@gmail.com",
+            "knowsAbout": ["SaaS products", "Backend systems", "Mobile apps", "Automation", "Security", "System design"],
+            "sameAs": [
+              "https://github.com/cetinboran",
+              "https://www.linkedin.com/in/cetinboran",
+              "https://www.instagram.com/2023an_m/"
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://cetinboran.com.tr/#schedly",
+            "name": "Schedly",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "iOS, Android, Web",
+            "description": "Scheduling and session-credit management app for coaches, instructors, personal trainers, tutors, and private-session operators.",
+            "url": "https://cetinboran.com.tr/projects/schedly/",
+            "creator": { "@id": "https://cetinboran.com.tr/#person" }
+          }
         ]
       }
     </script>
   </head>
-  <body>
-    <a class="skip-link" href="https://cetinboran.com.tr/#main-content"
-      >İçeriğe geç</a
-    >
+  <body data-page="home">
+    <a class="skip-link" href="#main-content" data-i18n="skip">İçeriğe geç</a>
 
-    <header class="site-header" data-site-header>
-      <div class="container site-nav-wrap">
-        <a
-          class="brand"
-          href="https://cetinboran.com.tr/#home"
-          aria-label="Ana sayfaya git"
-          ><img
-            class="brand-logo"
-            src="https://cetinboran.com.tr/assets/img/author.jpg"
-            alt="Çetin Boran profil resmi"
-            width="36"
-            height="36"
-          /><span>Çetin Boran</span></a
-        >
-        <nav aria-label="Ana gezinme">
-          <ul class="site-nav">
-            <li>
-              <a
-                class="nav-link"
-                data-nav-link
-                href="https://cetinboran.com.tr/#home"
-                >Ana Sayfa</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                data-nav-link
-                href="https://cetinboran.com.tr/#projects"
-                >Projeler</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                data-nav-link
-                href="https://cetinboran.com.tr/#contact"
-                >İletişim</a
-              >
-            </li>
-          </ul>
+    <header class="site-header" data-header>
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Çetin Boran Mesüm ana sayfa">
+          <img src="assets/img/author.jpg" alt="Çetin Boran Mesüm profil fotoğrafı" width="40" height="40" />
+          <span>Çetin Boran Mesüm</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="sr-only" data-i18n="menu">Menü</span>
+        </button>
+        <nav id="site-navigation" class="site-nav" aria-label="Ana gezinme" data-nav>
+          <a href="index.html" aria-current="page" data-i18n="nav.home">Ana sayfa</a>
+          <a href="projects.html" data-i18n="nav.projects">Projeler</a>
+          <a href="about.html" data-i18n="nav.about">Hakkımda</a>
+          <a href="contact.html" data-i18n="nav.contact">İletişim</a>
         </nav>
+        <div class="nav-actions" aria-label="Dil ve tema tercihleri">
+          <div class="segmented" role="group" aria-label="Dil seçimi">
+            <button class="segment is-active" type="button" data-lang-button="tr" aria-pressed="true">TR</button>
+            <button class="segment" type="button" data-lang-button="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Koyu temaya geç">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a1 1 0 0 1 1 1v1.25a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 14.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Zm8-6.5a1 1 0 0 1 0 2h-1.25a1 1 0 1 1 0-2H20ZM5.25 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2h1.25Zm11.64-5.3a1 1 0 0 1 0-1.42l.88-.88a1 1 0 1 1 1.42 1.42l-.88.88a1 1 0 0 1-1.42 0ZM5.69 18.31a1 1 0 0 1 0-1.42l.88-.88a1 1 0 1 1 1.42 1.42l-.88.88a1 1 0 0 1-1.42 0Zm13.5 0a1 1 0 0 1-1.42 0l-.88-.88a1 1 0 0 1 1.42-1.42l.88.88a1 1 0 0 1 0 1.42ZM6.57 5.7l-.88-.88A1 1 0 0 1 7.1 3.4l.88.88A1 1 0 0 1 6.57 5.7ZM12 19a1 1 0 0 1 1 1v1.25a1 1 0 1 1-2 0V20a1 1 0 0 1 1-1Z"/></svg>
+          </button>
+        </div>
       </div>
     </header>
 
     <main id="main-content">
-      <section
-        id="home"
-        class="section hero container reveal"
-        aria-label="Hero bölümü"
-      >
-        <figure class="hero-media">
-          <img
-            src="https://cetinboran.com.tr/assets/img/author.jpg"
-            alt="Çetin Boran profil resmi"
-            class="hero-avatar"
-            width="180"
-            height="180"
-          />
-        </figure>
-        <div class="hero-copy">
-          <p class="section-kicker">Kişisel Portfolyo</p>
-          <h1>Çetin Boran</h1>
-          <p class="hero-subtitle">
-            Ürün odaklı yazılım geliştiriyorum. Hedefim, sade arayüzlerle güçlü
-            altyapıları birleştirip ölçeklenebilir ve güvenilir dijital
-            deneyimler üretmek.
-          </p>
-          <div class="hero-cta">
-            <a
-              class="btn btn-primary"
-              href="https://cetinboran.com.tr/#projects"
-              >Projeler</a
-            >
-            <a class="btn btn-ghost" href="https://cetinboran.com.tr/#contact"
-              >İletişim</a
-            >
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title" data-i18n="hero.title">Pratik yazılım ürünleri geliştiren bağımsız yazılım geliştirici.</h1>
+            <p data-i18n="hero.text">Çetin Boran Mesüm; SaaS araçları, backend sistemleri, mobil uygulamalar ve operasyon odaklı otomasyon çözümleri geliştirir.</p>
           </div>
+          <a class="announcement-badge" href="projects/schedly/" aria-label="Schedly yayında">
+            <div class="announcement-badge-inner">
+              <img src="assets/icons/schedly-icon.png" alt="" width="52" height="52" />
+              <strong data-i18n="hero.note.title">Schedly yayında</strong>
+            </div>
+          </a>
         </div>
       </section>
 
-      <section
-        id="about"
-        class="section container reveal"
-        aria-labelledby="about-title"
-      >
-        <div class="section-heading">
-          <p class="section-kicker">Hakkımda</p>
-          <h2 id="about-title">Kısa Profil</h2>
-        </div>
-        <article class="about-card surface">
-          <p>
-            Yazılım geliştirme sürecinde performans, sürdürülebilirlik ve ürün
-            etkisi odaklı ilerliyorum. Backend servisleri, mobil ürünler ve
-            güvenlik odaklı çözümler üzerine çalışıyorum. Bu alandaki
-            projelerimi ve notlarımı aşağıda bulabilirsin.
-          </p>
-          <div class="skill-list" aria-label="Teknik yetkinlik etiketleri">
-            <span class="pill">Go</span>
-            <span class="pill">Backend</span>
-            <span class="pill">Mobile</span>
-            <span class="pill">Security</span>
-            <span class="pill">System Design</span>
-            <span class="pill">API Architecture</span>
+      <section class="section project-list-section" aria-labelledby="home-projects-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="home-projects-title" data-i18n="home.projects.title">Projeler</h2>
+            <p data-i18n="home.projects.lead">Şu anda yayında olan proje Schedly. Yeni projeler çıktığında aynı sade yapıya eklenebilir.</p>
           </div>
-        </article>
-      </section>
-
-      <section
-        id="projects"
-        class="section container reveal"
-        aria-labelledby="projects-title"
-      >
-        <div class="section-heading">
-          <p class="section-kicker">Projeler</p>
-          <h2 id="projects-title">Seçili Projeler</h2>
-        </div>
-
-        <div
-          class="toolbar"
-          role="search"
-          aria-label="Proje arama ve filtreleme"
-        >
-          <label class="visually-hidden" for="project-search">Proje ara</label>
-          <input
-            class="input"
-            type="search"
-            id="project-search"
-            name="project-search"
-            placeholder="Proje adına veya açıklamaya göre ara..."
-            autocomplete="off"
-            aria-label="Proje ara"
-          />
-          <div class="cluster" aria-label="Etiket filtreleri">
-            <button
-              class="pill pill-button is-active"
-              type="button"
-              data-tag-filter="all"
-              aria-label="Tüm projeleri göster"
-            >
-              Tümü
-            </button>
-            <button
-              class="pill pill-button"
-              type="button"
-              data-tag-filter="mobile"
-              aria-label="Mobil projeleri"
-            >
-              Mobil
-            </button>
-            <button
-              class="pill pill-button"
-              type="button"
-              data-tag-filter="backend"
-              aria-label="Backend projeleri"
-            >
-              Backend
-            </button>
-            <button
-              class="pill pill-button"
-              type="button"
-              data-tag-filter="saas"
-              aria-label="SaaS projeleri"
-            >
-              SaaS
-            </button>
-            <button
-              class="pill pill-button"
-              type="button"
-              data-tag-filter="product"
-              aria-label="Ürün projeleri"
-            >
-              Ürün
-            </button>
-          </div>
-        </div>
-
-        <p id="project-results-count" aria-live="polite" class="mb-4">
-          2 proje bulundu
-        </p>
-
-        <div class="projects-grid" aria-label="Proje listesi">
-          <article
-            class="card reveal"
-            data-project-card
-            data-tags="mobile,offline,product"
-          >
-            <h3 class="card-title">Hane</h3>
-            <p class="card-description">
-              Deprem ve afet anlarında internet olmadan çalışan aileye özel acil durum planı uygulaması.
-            </p>
-            <div class="cluster">
-              <span class="pill">Mobil</span>
-              <span class="pill">Offline</span>
-              <span class="pill">Ürün</span>
-            </div>
-            <div class="project-card-footer">
-              <span>Detayları incele</span>
-              <a
-                class="btn-link"
-                data-path="/projects/hane/"
-                href="https://cetinboran.com.tr/projects/hane/"
-                aria-label="Hane proje detayına git"
-                >İncele</a
-              >
-            </div>
-          </article>
-
-          <article
-            class="card reveal"
-            data-project-card
-            data-tags="saas,backend,mobile,product"
-          >
-            <h3 class="card-title">Schedly</h3>
-            <p class="card-description">
-              Koçlar için randevu, öğrenci ve mobil takip yönetimini
-              sadeleştiren
-              SaaS ürün.
-            </p>
-            <div class="cluster">
-              <span class="pill">SaaS</span>
-              <span class="pill">Backend</span>
-              <span class="pill">Mobil</span>
-              <span class="pill">Ürün</span>
-            </div>
-            <div class="project-card-footer">
-              <span>Detayları incele</span>
-              <a
-                class="btn-link"
-                data-path="/projects/schedly/"
-                href="https://cetinboran.com.tr/projects/schedly/"
-                aria-label="Schedly proje detayına git"
-                >İncele</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section
-        id="contact"
-        class="section container reveal"
-        aria-labelledby="contact-title"
-      >
-        <div class="section-heading">
-          <p class="section-kicker">İletişim</p>
-          <h2 id="contact-title">İletişim</h2>
-        </div>
-
-        <div class="contact-grid">
-          <article class="contact-card">
-            <h3>E-posta</h3>
-            <a class="contact-link" href="mailto:cetinmesum@gmail.com"
-              >cetinmesum@gmail.com</a
-            >
-            <a
-              class="btn btn-primary"
-              href="mailto:cetinmesum@gmail.com"
-              aria-label="E-posta gönder"
-              >Mail Gönder</a
-            >
-          </article>
-
-          <article class="contact-card">
-            <h3>GitHub</h3>
-            <a
-              class="contact-link"
-              href="https://github.com/cetinboran"
-              target="_blank"
-              rel="noopener"
-              aria-label="GitHub profilini yeni sekmede aç"
-            >
-              github.com/cetinboran
+          <div class="home-project-grid">
+            <a class="card project-card home-project-card" href="projects/schedly/" aria-label="Schedly projesine git">
+              <span class="status-badge" data-status="live" data-i18n="product.status">Yayında</span>
+              <img class="project-icon" src="assets/icons/schedly-icon.png" alt="Schedly uygulama ikonu" width="82" height="82" />
+              <span class="sr-only">Schedly</span>
             </a>
-          </article>
+          </div>
+        </div>
+      </section>
 
-          <article class="contact-card">
-            <h3>LinkedIn</h3>
-            <a
-              class="contact-link"
-              href="https://www.linkedin.com/in/cetinboran"
-              target="_blank"
-              rel="noopener"
-              aria-label="LinkedIn profilini yeni sekmede aç"
-            >
-              linkedin.com/in/cetinboran
-            </a>
-          </article>
+      <section class="section" aria-labelledby="build-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="build-title" data-i18n="home.build.title">Neler geliştiriyorum</h2>
+            <p data-i18n="home.build.lead">Odak noktam, günlük iş yükünü azaltan ve sürdürülebilir şekilde yönetilebilen yazılım sistemleri.</p>
+          </div>
+          <div class="grid-4">
+            <article class="card build-card">
+              <h3 data-i18n="build.saas.title">SaaS ürünleri</h3>
+              <p data-i18n="build.saas.text">Randevu, takip, üyelik ve yönetim süreçlerini ürüne dönüştüren web tabanlı yapılar.</p>
+            </article>
+            <article class="card build-card">
+              <h3 data-i18n="build.backend.title">Backend sistemleri</h3>
+              <p data-i18n="build.backend.text">API tasarımı, veri modeli, kimlik doğrulama ve ölçeklenebilir servis mimarileri.</p>
+            </article>
+            <article class="card build-card">
+              <h3 data-i18n="build.mobile.title">Mobil uygulamalar</h3>
+              <p data-i18n="build.mobile.text">Saha kullanımına uygun, hızlı ve anlaşılır iOS ve Android deneyimleri.</p>
+            </article>
+            <article class="card build-card">
+              <h3 data-i18n="build.automation.title">Otomasyon araçları</h3>
+              <p data-i18n="build.automation.text">Tekrarlayan işleri azaltan, veri akışlarını bağlayan ve manuel takibi hafifleten çözümler.</p>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>
-          © <span data-current-year>2026</span> Çetin Boran. Tüm hakları
-          saklıdır.
-        </p>
+      <div class="container footer-shell">
+        <p class="footer-brand">© <span data-year>2026</span> cetinboran</p>
+        <div class="footer-right">
+          <a class="social-icon" href="https://github.com/cetinboran" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0C15.5 4.7 16.5 5 16.5 5c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.4 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.linkedin.com/in/cetinboran" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v10.75H3V9.75Zm6.25 0h3.83v1.47h.05c.53-1 1.84-1.72 3.78-1.72 4.04 0 4.79 2.66 4.79 6.12v4.88h-4v-4.33c0-1.03-.02-2.36-1.44-2.36-1.44 0-1.66 1.13-1.66 2.29v4.4h-4V9.75Z"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/2023an_m/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-2.1a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg>
+          </a>
+          <a class="social-icon" href="mailto:cetinmesum@gmail.com" aria-label="E-posta">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm2 2v.4l7 4.4 7-4.4V7H5Zm14 10V9.8l-7 4.4-7-4.4V17h14Z"/></svg>
+          </a>
+        </div>
       </div>
     </footer>
 
-    <script type="module" src="assets/js/main.js"></script>
-    <script type="module" src="assets/js/pages/home.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
